@@ -1,1 +1,14 @@
 @import "tailwindcss";
+
+@theme {
+  --primary_teal: #ffc50f;
+  --secondary_teal: #ffc50f;
+  --primary_green: #ff9d00;
+  --secondary_green: #fa812f;
+  --color-gradient: linear-gradient(
+    to bottom right,
+    var(--primary_teal),
+    var(--secondary_green)
+  );
+  --font-ibm: "IBM Plex Sans", sans-serif;
+}

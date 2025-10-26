@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>UMKM Lokal</title>
+    <title>Temu UMKM</title>
     <link href="./assets/css/output.css" rel="stylesheet" />
     <link rel="stylesheet" href="./assets/css/font.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
@@ -15,5 +15,175 @@
       referrerpolicy="no-referrer"
     />
   </head>
-  <body></body>
+  <body>
+    <nav class="navbar" id="navbar">
+      <div class="nav-left">
+        <div class="logo">
+          <a href=""
+            ><img src="./images/logo/logo-temuUMKM.png" alt="Logo Temu UMKM"
+          /></a>
+        </div>
+        <div class="nav-menu" id="nav-menu">
+          <div class="content">
+            <div class="head">
+              <i class="fas fa-x" id="closeNav" onclick="hideMenuNav()"></i>
+              <img src="./images/logo/logo-temuUMKM.png" alt="Logo UMKM Kita" />
+            </div>
+            <a href="./" class="nav-list active-menu">Beranda</a>
+            <a href="./src/tentang.html" class="nav-list">Tentang Kami</a>
+            <a href="./src/umkm-lokal.html" class="nav-list">Data UMKM Lokal</a>
+            <a href="./src/testimoni.html" class="nav-list">Testimoni</a>
+            <a href="./src/blog.html" class="nav-list">Blog</a>
+            <a class="btn-started" href="auth/sign-in.html">Get Started</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="nav-right">
+        <i class="fas fa-list-ul" id="hamburger" onclick="showMenuNav()"></i>
+        <a class="btn-started" href="auth/sign-in.html">Get Started</a>
+      </div>
+    </nav>
+
+    <section
+      class="hero w-full h-dvh text-white flex justify-center items-center"
+    >
+      <main
+        class="content flex justify-center items-center flex-col w-[50%] sm:w-[100%] lg:w-[45%]"
+      >
+        <span class="badge-span"
+          ><i class="fas fa-star"></i> #BersamaTemuUMKM</span
+        >
+        <h1 class="text-4xl font-bold text-jutify flex flex-col my-3">
+          <span>Temukan UMKM Lokal di Sekitar</span>
+          <span
+            >Universitas
+            <span class="text-violet-700">Amikom Purwokerto</span></span
+          >
+        </h1>
+        <p class="text-[0.9rem] text-justify">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero
+          voluptates vitae omnis ad eos, tempora odio sed rem ratione itaque
+          dolores consequuntur aperiam. Magnam nulla vitae provident dolorum
+          deserunt laudantium?
+        </p>
+        <a
+          class="bg-gradient-span text-[0.9rem] inline-block py-1.5 px-3.5 mt-4 rounded-sm"
+          href=""
+          ><i class="fa-solid fa-magnifying-glass"></i> Jelajahi Sekarang</a
+        >
+      </main>
+    </section>
+
+    <section class="about p-[5rem_8%]">
+      <div class="header-section">
+        <span class="badge-span">Tentang TemuUMKM</span>
+        <div class="">
+          <h3 class="font-semibold text-xl mt-2 mb-0.5">
+            Temukan Cerita di Balik Setiap UMKM Kampus
+          </h3>
+        </div>
+        <p class="text-[0.93rem]">
+          "Dari <span class="text-violet-700 font-medium">Amikom</span>, untuk
+          UMKM Purwokerto"
+        </p>
+      </div>
+      <div class="row-about mt-6 flex gap-6">
+        <div class="left-about flex-1">
+          <div class="img-about w-full">
+            <img
+              class="rounded-md w-full h-auto"
+              src="./images/about.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="right-about flex-1">
+          <div class="d-about">
+            <h3 class="text-[1.14rem] font-semibold">
+              Lorem ipsum
+              <span class="color-span">dolor sit amet</span> consectetur
+              adipisicing elit. Nihil, quod amet consectetur adipisicing elit.
+              <span class="color-span">dolor sit amet</span>
+            </h3>
+            <p class="text-[0.9rem] text-justify my-3">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Veritatis assumenda consequatur obcaecati, in officiis fuga, id
+              omnis quasi tenetur repudiandae excepturi nesciunt eum reiciendis
+              quis laboriosam consectetur ipsum sint perferendis architecto
+              voluptatum! Debitis autem officiis, nulla, fugit aspernatur rem
+              sed accusantium ut odio, ab non eius molestias asperiores et quo.
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Veritatis assumenda consequatur obcaecati, in officiis fuga, id
+              omnis quasi tenetur Veritatis assumenda consequatur obcaecati, in
+              officiis fuga, id omnis quasi tenetur.
+            </p>
+            <a
+              class="bg-gradient-span text-white text-[0.85rem] inline-block py-1 px-3 rounded-sm"
+              href=""
+            >
+              Pelajari Lebih Lanjut</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="about-bottom mt-8">
+        <div class="row-about-c flex justify-center items-center gap-5">
+          <div
+            class="box max-sm:max-w-full max-sm:w-full max-md:w-[calc(50%-1.25rem)] max-lg:w-[calc(50%-1.25rem)] lg:w-[calc(25%-1.25rem)] flex items-center gap-3 py-2 px-3 rounded-sm border-[1.5px] border-[#e7e7e7] hover:bg-[#f1f1f1]"
+          >
+            <div
+              class="icon bg-gradient-span w-[40px] h-[40px] flex justify-center items-center rounded-sm text-white"
+            >
+              <i class="fas fa-shop"></i>
+            </div>
+            <div class="d-box">
+              <h5 class="text-[1.1rem] font-medium">10+</h5>
+              <p class="text-[0.8rem] text-slate-700">UMKM Terdaftar</p>
+            </div>
+          </div>
+          <div
+            class="box max-sm:max-w-full max-sm:w-full max-md:w-[calc(50%-1.25rem)] max-lg:w-[calc(50%-1.25rem)] lg:w-[calc(25%-1.25rem)] flex items-center gap-3 py-2 px-3 rounded-sm border-[1.5px] border-[#e7e7e7] hover:bg-[#f1f1f1]"
+          >
+            <div
+              class="icon bg-gradient-span w-[40px] h-[40px] flex justify-center items-center rounded-sm text-white"
+            >
+              <i class="fas fa-shop"></i>
+            </div>
+            <div class="d-box">
+              <h5 class="text-[1.1rem] font-medium">10+</h5>
+              <p class="text-[0.8rem] text-slate-700">UMKM Terdaftar</p>
+            </div>
+          </div>
+          <div
+            class="box max-sm:max-w-full max-sm:w-full max-md:w-[calc(50%-1.25rem)] max-lg:w-[calc(50%-1.25rem)] lg:w-[calc(25%-1.25rem)] flex items-center gap-3 py-2 px-3 rounded-sm border-[1.5px] border-[#e7e7e7] hover:bg-[#f1f1f1]"
+          >
+            <div
+              class="icon bg-gradient-span w-[40px] h-[40px] flex justify-center items-center rounded-sm text-white"
+            >
+              <i class="fas fa-bullseye"></i>
+            </div>
+            <div class="d-box">
+              <h5 class="text-[1.1rem] font-medium">3+</h5>
+              <p class="text-[0.8rem] text-slate-700">Kategori</p>
+            </div>
+          </div>
+          <div
+            class="box max-sm:max-w-full max-sm:w-full max-md:w-[calc(50%-1.25rem)] max-lg:w-[calc(50%-1.25rem)] lg:w-[calc(25%-1.25rem)] flex items-center gap-3 py-2 px-3 rounded-sm border-[1.5px] border-[#e7e7e7] hover:bg-[#f1f1f1]"
+          >
+            <div
+              class="icon bg-gradient-span w-[40px] h-[40px] flex justify-center items-center rounded-sm text-white"
+            >
+              <i class="fas fa-users"></i>
+            </div>
+            <div class="d-box">
+              <h5 class="text-[1.1rem] font-medium">1000+</h5>
+              <p class="text-[0.8rem] text-slate-700">Pengunjung Website</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="./assets/js/script.js"></script>
+  </body>
 </html>
