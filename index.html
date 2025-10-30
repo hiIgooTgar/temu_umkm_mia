@@ -49,12 +49,14 @@
       class="hero w-full h-dvh text-white flex justify-center items-center"
     >
       <main
-        class="content flex justify-center items-center flex-col w-[50%] sm:w-[100%] lg:w-[45%]"
+        class="content flex justify-center items-center flex-col max-sm:max-w-full max-sm:w-full max-md:w-[60%] max-lg:w-[45%] lg:w-[45%]"
       >
         <span class="badge-span"
           ><i class="fas fa-star"></i> #BersamaTemuUMKM</span
         >
-        <h1 class="text-4xl font-bold text-jutify flex flex-col my-3">
+        <h1
+          class="text-4xl font-bold flex flex-col my-4 w-full max-w-full justify-center items-center"
+        >
           <span>Temukan UMKM Lokal di Sekitar</span>
           <span
             >Universitas
@@ -64,11 +66,12 @@
         <p class="text-[0.9rem] text-justify">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero
           voluptates vitae omnis ad eos, tempora odio sed rem ratione itaque
-          dolores consequuntur aperiam. Magnam nulla vitae provident dolorum
-          deserunt laudantium?
+          dolores consequuntur aperiam. Magnam nulla vitae provident Magnam
+          nulla vitae provident Magnam nulla vitaeaaaa dolorum deserunt
+          laudantium?
         </p>
         <a
-          class="bg-gradient-span text-[0.9rem] inline-block py-1.5 px-3.5 mt-4 rounded-sm"
+          class="bg-gradient-span text-[0.9rem] inline-block py-1.5 px-3.5 mt-6 rounded-sm"
           href=""
           ><i class="fa-solid fa-magnifying-glass"></i> Jelajahi Sekarang</a
         >
@@ -116,7 +119,8 @@
               Lorem ipsum dolor, sit amet consectetur adipisicing elit.
               Veritatis assumenda consequatur obcaecati, in officiis fuga, id
               omnis quasi tenetur Veritatis assumenda consequatur obcaecati, in
-              officiis fuga, id omnis quasi tenetur.
+              officiis fuga, id omnis quasi tenetur Veritatis assumenda
+              consequatur obcaecati, in officiis fuga, id omnis quasi tenetur.
             </p>
             <a
               class="bg-gradient-span text-white text-[0.85rem] inline-block py-1 px-3 rounded-sm"
@@ -127,8 +131,8 @@
           </div>
         </div>
       </div>
-      <div class="about-bottom mt-8">
-        <div class="row-about-c flex justify-center items-center gap-5">
+      <div class="about-bottom mt-10">
+        <div class="row-about-c flex justify-center items-center gap-7">
           <div
             class="box max-sm:max-w-full max-sm:w-full max-md:w-[calc(50%-1.25rem)] max-lg:w-[calc(50%-1.25rem)] lg:w-[calc(25%-1.25rem)] flex items-center gap-3 py-2 px-3 rounded-sm border-[1.5px] border-[#e7e7e7] hover:bg-[#f1f1f1]"
           >
@@ -182,6 +186,763 @@
             </div>
           </div>
         </div>
+      </div>
+    </section>
+
+    <section class="data-umkm p-[5rem_8%]">
+      <div class="header-section">
+        <span class="badge-span">Daftar UMKM</span>
+        <div class="">
+          <h3 class="font-semibold text-xl mt-2 mb-0.5">
+            Jelajahi UMKM Sekitar Kampus Amikom Purwokerto
+          </h3>
+        </div>
+        <p class="text-[0.93rem]">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia omnis
+          molestiae in tempora labore nesciunt totam eum unde sint deserunt.
+        </p>
+      </div>
+      <div class="categories my-4 flex gap-6 items-center">
+        <div class="list-category flex-[1_1_65%] flex gap-4 items-center">
+          <span
+            class="border-[1.5px] border-violet-700 px-3 py-1.5 text-[0.9rem] rounded-md bg-violet-700 text-white"
+            ><i class="fas fa-utensils"></i> Makanan & Minuman</span
+          >
+          <span
+            class="border-[1.5px] border-[#c4c4c4] px-3 py-1.5 text-[0.9rem] rounded-md text-[#777]"
+            ><i class="fas fa-handshake"></i> Jasa & Layanan</span
+          >
+          <span
+            class="border-[1.5px] border-[#c4c4c4] px-3 py-1.5 text-[0.9rem] rounded-md text-[#777]"
+            ><i class="fas fa-boxes-packing"></i> Produk Kreatif</span
+          >
+        </div>
+        <div class="searching-product flex-[1_1_35%]">
+          <div
+            class="input-search flex items-center gap-[0.5rem] border-[1.5px] border-[#666] rounded-[5px] px-3 py-2"
+          >
+            <i class="fas fa-magnifying-glass bg-gradient-span p-[2px]"></i>
+            <input
+              placeholder="Masukan pencarian UMKM Lokal"
+              type="text"
+              class="search-input w-full border-none outline-none text-[0.9rem] py-0 px-[0.25rem]"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="row-data-umkm grid grid-cols-3 gap-5 mt-7">
+        <div
+          class="box-product border-[1.5px] border-[#ddd] shadow p-2.5 rounded-md"
+        >
+          <div class="img-c relative w-full h-[220px]">
+            <img
+              class="rounded-md w-full h-full object-cover object-center"
+              src="./images/about.jpg"
+              alt=""
+            />
+            <div
+              class="overlay absolute inset-0 flex justify-center items-center w-full h-full"
+            >
+              <a
+                class="bg-gradient-span text-white text-[0.85rem] inline-block py-1 px-3 rounded-sm"
+                href=""
+              >
+                Detail UMKM</a
+              >
+            </div>
+          </div>
+          <div class="d-desc">
+            <div class="category-d flex gap-4 justify-between mt-4 mb-2.5">
+              <span
+                class="px-2 pt-[0.3rem] pb-[0.0.5rem] text-[0.8rem] rounded-md bg-[rgba(112,8,231,0.15)] text-violet-700"
+                ><i class="fas fa-utensils"></i> Makanan & Minuman</span
+              >
+
+              <span
+                class="px-2 py-1 text-[0.8rem] rounded-md border-[1.5px] border-[#ddd] text-[#666]"
+              >
+                4.9 <i class="fas fa-star text-yellow-400"></i
+              ></span>
+            </div>
+            <h3 class="font-medium text-[1.1rem] mb-2">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi,
+              velit!
+            </h3>
+            <p
+              class="text-[0.88rem] text-[#333] text-justify py-2 border-t-[1.3px] border-b-[1.3px] border-[#e1e1e1]"
+            >
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+              quidem modi incidunt illum praesentium enim officiis repellendus!
+              Alias, eligendi libero itaque earum maiores voluptatibus
+              voluptates.
+            </p>
+            <div
+              class="text-justify text-[0.82rem] text-[#555] flex gap-2 mt-2.5"
+            >
+              <i class="fas fa-location-dot text-[0.8rem] mt-0.5"></i>
+              <p class="">
+                Jl. Letjend Pol. Soemarto No.127, Watumas, Purwanegara, Kec.
+                Purwokerto Utara, Kabupaten Banyumas, Jawa Tengah 53127
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="box-product border-[1.5px] border-[#ddd] shadow p-2.5 rounded-md"
+        >
+          <div class="img-c relative w-full h-[220px]">
+            <img
+              class="rounded-md w-full h-full object-cover object-center"
+              src="./images/about.jpg"
+              alt=""
+            />
+            <div
+              class="overlay absolute inset-0 flex justify-center items-center w-full h-full"
+            >
+              <a
+                class="bg-gradient-span text-white text-[0.85rem] inline-block py-1 px-3 rounded-sm"
+                href=""
+              >
+                Detail UMKM</a
+              >
+            </div>
+          </div>
+          <div class="d-desc">
+            <div class="category-d flex gap-4 justify-between mt-4 mb-2.5">
+              <span
+                class="px-2 pt-[0.3rem] pb-[0.0.5rem] text-[0.8rem] rounded-md bg-[rgba(112,8,231,0.15)] text-violet-700"
+                ><i class="fas fa-utensils"></i> Makanan & Minuman</span
+              >
+
+              <span
+                class="px-2 py-1 text-[0.8rem] rounded-md border-[1.5px] border-[#ddd] text-[#666]"
+              >
+                4.9 <i class="fas fa-star text-yellow-400"></i
+              ></span>
+            </div>
+            <h3 class="font-medium text-[1.1rem] mb-2">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi,
+              velit!
+            </h3>
+            <p
+              class="text-[0.88rem] text-[#333] text-justify py-2 border-t-[1.3px] border-b-[1.3px] border-[#e1e1e1]"
+            >
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+              quidem modi incidunt illum praesentium enim officiis repellendus!
+              Alias, eligendi libero itaque earum maiores voluptatibus
+              voluptates.
+            </p>
+            <div
+              class="text-justify text-[0.82rem] text-[#555] flex gap-2 mt-2.5"
+            >
+              <i class="fas fa-location-dot text-[0.8rem] mt-0.5"></i>
+              <p class="">
+                Jl. Letjend Pol. Soemarto No.127, Watumas, Purwanegara, Kec.
+                Purwokerto Utara, Kabupaten Banyumas, Jawa Tengah 53127
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="box-product border-[1.5px] border-[#ddd] shadow p-2.5 rounded-md"
+        >
+          <div class="img-c relative w-full h-[220px]">
+            <img
+              class="rounded-md w-full h-full object-cover object-center"
+              src="./images/about.jpg"
+              alt=""
+            />
+            <div
+              class="overlay absolute inset-0 flex justify-center items-center w-full h-full"
+            >
+              <a
+                class="bg-gradient-span text-white text-[0.85rem] inline-block py-1 px-3 rounded-sm"
+                href=""
+              >
+                Detail UMKM</a
+              >
+            </div>
+          </div>
+          <div class="d-desc">
+            <div class="category-d flex gap-4 justify-between mt-4 mb-2.5">
+              <span
+                class="px-2 pt-[0.3rem] pb-[0.0.5rem] text-[0.8rem] rounded-md bg-[rgba(112,8,231,0.15)] text-violet-700"
+                ><i class="fas fa-utensils"></i> Makanan & Minuman</span
+              >
+
+              <span
+                class="px-2 py-1 text-[0.8rem] rounded-md border-[1.5px] border-[#ddd] text-[#666]"
+              >
+                4.9 <i class="fas fa-star text-yellow-400"></i
+              ></span>
+            </div>
+            <h3 class="font-medium text-[1.1rem] mb-2">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi,
+              velit!
+            </h3>
+            <p
+              class="text-[0.88rem] text-[#333] text-justify py-2 border-t-[1.3px] border-b-[1.3px] border-[#e1e1e1]"
+            >
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+              quidem modi incidunt illum praesentium enim officiis repellendus!
+              Alias, eligendi libero itaque earum maiores voluptatibus
+              voluptates.
+            </p>
+            <div
+              class="text-justify text-[0.82rem] text-[#555] flex gap-2 mt-2.5"
+            >
+              <i class="fas fa-location-dot text-[0.8rem] mt-0.5"></i>
+              <p class="">
+                Jl. Letjend Pol. Soemarto No.127, Watumas, Purwanegara, Kec.
+                Purwokerto Utara, Kabupaten Banyumas, Jawa Tengah 53127
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="box-product border-[1.5px] border-[#ddd] shadow p-2.5 rounded-md"
+        >
+          <div class="img-c relative w-full h-[220px]">
+            <img
+              class="rounded-md w-full h-full object-cover object-center"
+              src="./images/about.jpg"
+              alt=""
+            />
+            <div
+              class="overlay absolute inset-0 flex justify-center items-center w-full h-full"
+            >
+              <a
+                class="bg-gradient-span text-white text-[0.85rem] inline-block py-1 px-3 rounded-sm"
+                href=""
+              >
+                Detail UMKM</a
+              >
+            </div>
+          </div>
+          <div class="d-desc">
+            <div class="category-d flex gap-4 justify-between mt-4 mb-2.5">
+              <span
+                class="px-2 pt-[0.3rem] pb-[0.0.5rem] text-[0.8rem] rounded-md bg-[rgba(112,8,231,0.15)] text-violet-700"
+                ><i class="fas fa-utensils"></i> Makanan & Minuman</span
+              >
+
+              <span
+                class="px-2 py-1 text-[0.8rem] rounded-md border-[1.5px] border-[#ddd] text-[#666]"
+              >
+                4.9 <i class="fas fa-star text-yellow-400"></i
+              ></span>
+            </div>
+            <h3 class="font-medium text-[1.1rem] mb-2">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi,
+              velit!
+            </h3>
+            <p
+              class="text-[0.88rem] text-[#333] text-justify py-2 border-t-[1.3px] border-b-[1.3px] border-[#e1e1e1]"
+            >
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+              quidem modi incidunt illum praesentium enim officiis repellendus!
+              Alias, eligendi libero itaque earum maiores voluptatibus
+              voluptates.
+            </p>
+            <div
+              class="text-justify text-[0.82rem] text-[#555] flex gap-2 mt-2.5"
+            >
+              <i class="fas fa-location-dot text-[0.8rem] mt-0.5"></i>
+              <p class="">
+                Jl. Letjend Pol. Soemarto No.127, Watumas, Purwanegara, Kec.
+                Purwokerto Utara, Kabupaten Banyumas, Jawa Tengah 53127
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="box-product border-[1.5px] border-[#ddd] shadow p-2.5 rounded-md"
+        >
+          <div class="img-c relative w-full h-[220px]">
+            <img
+              class="rounded-md w-full h-full object-cover object-center"
+              src="./images/about.jpg"
+              alt=""
+            />
+            <div
+              class="overlay absolute inset-0 flex justify-center items-center w-full h-full"
+            >
+              <a
+                class="bg-gradient-span text-white text-[0.85rem] inline-block py-1 px-3 rounded-sm"
+                href=""
+              >
+                Detail UMKM</a
+              >
+            </div>
+          </div>
+          <div class="d-desc">
+            <div class="category-d flex gap-4 justify-between mt-4 mb-2.5">
+              <span
+                class="px-2 pt-[0.3rem] pb-[0.0.5rem] text-[0.8rem] rounded-md bg-[rgba(112,8,231,0.15)] text-violet-700"
+                ><i class="fas fa-utensils"></i> Makanan & Minuman</span
+              >
+
+              <span
+                class="px-2 py-1 text-[0.8rem] rounded-md border-[1.5px] border-[#ddd] text-[#666]"
+              >
+                4.9 <i class="fas fa-star text-yellow-400"></i
+              ></span>
+            </div>
+            <h3 class="font-medium text-[1.1rem] mb-2">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi,
+              velit!
+            </h3>
+            <p
+              class="text-[0.88rem] text-[#333] text-justify py-2 border-t-[1.3px] border-b-[1.3px] border-[#e1e1e1]"
+            >
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+              quidem modi incidunt illum praesentium enim officiis repellendus!
+              Alias, eligendi libero itaque earum maiores voluptatibus
+              voluptates.
+            </p>
+            <div
+              class="text-justify text-[0.82rem] text-[#555] flex gap-2 mt-2.5"
+            >
+              <i class="fas fa-location-dot text-[0.8rem] mt-0.5"></i>
+              <p class="">
+                Jl. Letjend Pol. Soemarto No.127, Watumas, Purwanegara, Kec.
+                Purwokerto Utara, Kabupaten Banyumas, Jawa Tengah 53127
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="box-product border-[1.5px] border-[#ddd] shadow p-2.5 rounded-md"
+        >
+          <div class="img-c relative w-full h-[220px]">
+            <img
+              class="rounded-md w-full h-full object-cover object-center"
+              src="./images/about.jpg"
+              alt=""
+            />
+            <div
+              class="overlay absolute inset-0 flex justify-center items-center w-full h-full"
+            >
+              <a
+                class="bg-gradient-span text-white text-[0.85rem] inline-block py-1 px-3 rounded-sm"
+                href=""
+              >
+                Detail UMKM</a
+              >
+            </div>
+          </div>
+          <div class="d-desc">
+            <div class="category-d flex gap-4 justify-between mt-4 mb-2.5">
+              <span
+                class="px-2 pt-[0.3rem] pb-[0.0.5rem] text-[0.8rem] rounded-md bg-[rgba(112,8,231,0.15)] text-violet-700"
+                ><i class="fas fa-utensils"></i> Makanan & Minuman</span
+              >
+
+              <span
+                class="px-2 py-1 text-[0.8rem] rounded-md border-[1.5px] border-[#ddd] text-[#666]"
+              >
+                4.9 <i class="fas fa-star text-yellow-400"></i
+              ></span>
+            </div>
+            <h3 class="font-medium text-[1.1rem] mb-2">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi,
+              velit!
+            </h3>
+            <p
+              class="text-[0.88rem] text-[#333] text-justify py-2 border-t-[1.3px] border-b-[1.3px] border-[#e1e1e1]"
+            >
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+              quidem modi incidunt illum praesentium enim officiis repellendus!
+              Alias, eligendi libero itaque earum maiores voluptatibus
+              voluptates.
+            </p>
+            <div
+              class="text-justify text-[0.82rem] text-[#555] flex gap-2 mt-2.5"
+            >
+              <i class="fas fa-location-dot text-[0.8rem] mt-0.5"></i>
+              <p class="">
+                Jl. Letjend Pol. Soemarto No.127, Watumas, Purwanegara, Kec.
+                Purwokerto Utara, Kabupaten Banyumas, Jawa Tengah 53127
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="box-product border-[1.5px] border-[#ddd] shadow p-2.5 rounded-md"
+        >
+          <div class="img-c relative w-full h-[220px]">
+            <img
+              class="rounded-md w-full h-full object-cover object-center"
+              src="./images/about.jpg"
+              alt=""
+            />
+            <div
+              class="overlay absolute inset-0 flex justify-center items-center w-full h-full"
+            >
+              <a
+                class="bg-gradient-span text-white text-[0.85rem] inline-block py-1 px-3 rounded-sm"
+                href=""
+              >
+                Detail UMKM</a
+              >
+            </div>
+          </div>
+          <div class="d-desc">
+            <div class="category-d flex gap-4 justify-between mt-4 mb-2.5">
+              <span
+                class="px-2 pt-[0.3rem] pb-[0.0.5rem] text-[0.8rem] rounded-md bg-[rgba(112,8,231,0.15)] text-violet-700"
+                ><i class="fas fa-utensils"></i> Makanan & Minuman</span
+              >
+
+              <span
+                class="px-2 py-1 text-[0.8rem] rounded-md border-[1.5px] border-[#ddd] text-[#666]"
+              >
+                4.9 <i class="fas fa-star text-yellow-400"></i
+              ></span>
+            </div>
+            <h3 class="font-medium text-[1.1rem] mb-2">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi,
+              velit!
+            </h3>
+            <p
+              class="text-[0.88rem] text-[#333] text-justify py-2 border-t-[1.3px] border-b-[1.3px] border-[#e1e1e1]"
+            >
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+              quidem modi incidunt illum praesentium enim officiis repellendus!
+              Alias, eligendi libero itaque earum maiores voluptatibus
+              voluptates.
+            </p>
+            <div
+              class="text-justify text-[0.82rem] text-[#555] flex gap-2 mt-2.5"
+            >
+              <i class="fas fa-location-dot text-[0.8rem] mt-0.5"></i>
+              <p class="">
+                Jl. Letjend Pol. Soemarto No.127, Watumas, Purwanegara, Kec.
+                Purwokerto Utara, Kabupaten Banyumas, Jawa Tengah 53127
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="box-product border-[1.5px] border-[#ddd] shadow p-2.5 rounded-md"
+        >
+          <div class="img-c relative w-full h-[220px]">
+            <img
+              class="rounded-md w-full h-full object-cover object-center"
+              src="./images/about.jpg"
+              alt=""
+            />
+            <div
+              class="overlay absolute inset-0 flex justify-center items-center w-full h-full"
+            >
+              <a
+                class="bg-gradient-span text-white text-[0.85rem] inline-block py-1 px-3 rounded-sm"
+                href=""
+              >
+                Detail UMKM</a
+              >
+            </div>
+          </div>
+          <div class="d-desc">
+            <div class="category-d flex gap-4 justify-between mt-4 mb-2.5">
+              <span
+                class="px-2 pt-[0.3rem] pb-[0.0.5rem] text-[0.8rem] rounded-md bg-[rgba(112,8,231,0.15)] text-violet-700"
+                ><i class="fas fa-utensils"></i> Makanan & Minuman</span
+              >
+
+              <span
+                class="px-2 py-1 text-[0.8rem] rounded-md border-[1.5px] border-[#ddd] text-[#666]"
+              >
+                4.9 <i class="fas fa-star text-yellow-400"></i
+              ></span>
+            </div>
+            <h3 class="font-medium text-[1.1rem] mb-2">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi,
+              velit!
+            </h3>
+            <p
+              class="text-[0.88rem] text-[#333] text-justify py-2 border-t-[1.3px] border-b-[1.3px] border-[#e1e1e1]"
+            >
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+              quidem modi incidunt illum praesentium enim officiis repellendus!
+              Alias, eligendi libero itaque earum maiores voluptatibus
+              voluptates.
+            </p>
+            <div
+              class="text-justify text-[0.82rem] text-[#555] flex gap-2 mt-2.5"
+            >
+              <i class="fas fa-location-dot text-[0.8rem] mt-0.5"></i>
+              <p class="">
+                Jl. Letjend Pol. Soemarto No.127, Watumas, Purwanegara, Kec.
+                Purwokerto Utara, Kabupaten Banyumas, Jawa Tengah 53127
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="box-product border-[1.5px] border-[#ddd] shadow p-2.5 rounded-md"
+        >
+          <div class="img-c relative w-full h-[220px]">
+            <img
+              class="rounded-md w-full h-full object-cover object-center"
+              src="./images/about.jpg"
+              alt=""
+            />
+            <div
+              class="overlay absolute inset-0 flex justify-center items-center w-full h-full"
+            >
+              <a
+                class="bg-gradient-span text-white text-[0.85rem] inline-block py-1 px-3 rounded-sm"
+                href=""
+              >
+                Detail UMKM</a
+              >
+            </div>
+          </div>
+          <div class="d-desc">
+            <div class="category-d flex gap-4 justify-between mt-4 mb-2.5">
+              <span
+                class="px-2 pt-[0.3rem] pb-[0.0.5rem] text-[0.8rem] rounded-md bg-[rgba(112,8,231,0.15)] text-violet-700"
+                ><i class="fas fa-utensils"></i> Makanan & Minuman</span
+              >
+
+              <span
+                class="px-2 py-1 text-[0.8rem] rounded-md border-[1.5px] border-[#ddd] text-[#666]"
+              >
+                4.9 <i class="fas fa-star text-yellow-400"></i
+              ></span>
+            </div>
+            <h3 class="font-medium text-[1.1rem] mb-2">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi,
+              velit!
+            </h3>
+            <p
+              class="text-[0.88rem] text-[#333] text-justify py-2 border-t-[1.3px] border-b-[1.3px] border-[#e1e1e1]"
+            >
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+              quidem modi incidunt illum praesentium enim officiis repellendus!
+              Alias, eligendi libero itaque earum maiores voluptatibus
+              voluptates.
+            </p>
+            <div
+              class="text-justify text-[0.82rem] text-[#555] flex gap-2 mt-2.5"
+            >
+              <i class="fas fa-location-dot text-[0.8rem] mt-0.5"></i>
+              <p class="">
+                Jl. Letjend Pol. Soemarto No.127, Watumas, Purwanegara, Kec.
+                Purwokerto Utara, Kabupaten Banyumas, Jawa Tengah 53127
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="box-product border-[1.5px] border-[#ddd] shadow p-2.5 rounded-md"
+        >
+          <div class="img-c relative w-full h-[220px]">
+            <img
+              class="rounded-md w-full h-full object-cover object-center"
+              src="./images/about.jpg"
+              alt=""
+            />
+            <div
+              class="overlay absolute inset-0 flex justify-center items-center w-full h-full"
+            >
+              <a
+                class="bg-gradient-span text-white text-[0.85rem] inline-block py-1 px-3 rounded-sm"
+                href=""
+              >
+                Detail UMKM</a
+              >
+            </div>
+          </div>
+          <div class="d-desc">
+            <div class="category-d flex gap-4 justify-between mt-4 mb-2.5">
+              <span
+                class="px-2 pt-[0.3rem] pb-[0.0.5rem] text-[0.8rem] rounded-md bg-[rgba(112,8,231,0.15)] text-violet-700"
+                ><i class="fas fa-utensils"></i> Makanan & Minuman</span
+              >
+
+              <span
+                class="px-2 py-1 text-[0.8rem] rounded-md border-[1.5px] border-[#ddd] text-[#666]"
+              >
+                4.9 <i class="fas fa-star text-yellow-400"></i
+              ></span>
+            </div>
+            <h3 class="font-medium text-[1.1rem] mb-2">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi,
+              velit!
+            </h3>
+            <p
+              class="text-[0.88rem] text-[#333] text-justify py-2 border-t-[1.3px] border-b-[1.3px] border-[#e1e1e1]"
+            >
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+              quidem modi incidunt illum praesentium enim officiis repellendus!
+              Alias, eligendi libero itaque earum maiores voluptatibus
+              voluptates.
+            </p>
+            <div
+              class="text-justify text-[0.82rem] text-[#555] flex gap-2 mt-2.5"
+            >
+              <i class="fas fa-location-dot text-[0.8rem] mt-0.5"></i>
+              <p class="">
+                Jl. Letjend Pol. Soemarto No.127, Watumas, Purwanegara, Kec.
+                Purwokerto Utara, Kabupaten Banyumas, Jawa Tengah 53127
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="box-product border-[1.5px] border-[#ddd] shadow p-2.5 rounded-md"
+        >
+          <div class="img-c relative w-full h-[220px]">
+            <img
+              class="rounded-md w-full h-full object-cover object-center"
+              src="./images/about.jpg"
+              alt=""
+            />
+            <div
+              class="overlay absolute inset-0 flex justify-center items-center w-full h-full"
+            >
+              <a
+                class="bg-gradient-span text-white text-[0.85rem] inline-block py-1 px-3 rounded-sm"
+                href=""
+              >
+                Detail UMKM</a
+              >
+            </div>
+          </div>
+          <div class="d-desc">
+            <div class="category-d flex gap-4 justify-between mt-4 mb-2.5">
+              <span
+                class="px-2 pt-[0.3rem] pb-[0.0.5rem] text-[0.8rem] rounded-md bg-[rgba(112,8,231,0.15)] text-violet-700"
+                ><i class="fas fa-utensils"></i> Makanan & Minuman</span
+              >
+
+              <span
+                class="px-2 py-1 text-[0.8rem] rounded-md border-[1.5px] border-[#ddd] text-[#666]"
+              >
+                4.9 <i class="fas fa-star text-yellow-400"></i
+              ></span>
+            </div>
+            <h3 class="font-medium text-[1.1rem] mb-2">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi,
+              velit!
+            </h3>
+            <p
+              class="text-[0.88rem] text-[#333] text-justify py-2 border-t-[1.3px] border-b-[1.3px] border-[#e1e1e1]"
+            >
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+              quidem modi incidunt illum praesentium enim officiis repellendus!
+              Alias, eligendi libero itaque earum maiores voluptatibus
+              voluptates.
+            </p>
+            <div
+              class="text-justify text-[0.82rem] text-[#555] flex gap-2 mt-2.5"
+            >
+              <i class="fas fa-location-dot text-[0.8rem] mt-0.5"></i>
+              <p class="">
+                Jl. Letjend Pol. Soemarto No.127, Watumas, Purwanegara, Kec.
+                Purwokerto Utara, Kabupaten Banyumas, Jawa Tengah 53127
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="box-product border-[1.5px] border-[#ddd] shadow p-2.5 rounded-md"
+        >
+          <div class="img-c relative w-full h-[220px]">
+            <img
+              class="rounded-md w-full h-full object-cover object-center"
+              src="./images/about.jpg"
+              alt=""
+            />
+            <div
+              class="overlay absolute inset-0 flex justify-center items-center w-full h-full"
+            >
+              <a
+                class="bg-gradient-span text-white text-[0.85rem] inline-block py-1 px-3 rounded-sm"
+                href=""
+              >
+                Detail UMKM</a
+              >
+            </div>
+          </div>
+          <div class="d-desc">
+            <div class="category-d flex gap-4 justify-between mt-4 mb-2.5">
+              <span
+                class="px-2 pt-[0.3rem] pb-[0.0.5rem] text-[0.8rem] rounded-md bg-[rgba(112,8,231,0.15)] text-violet-700"
+                ><i class="fas fa-utensils"></i> Makanan & Minuman</span
+              >
+
+              <span
+                class="px-2 py-1 text-[0.8rem] rounded-md border-[1.5px] border-[#ddd] text-[#666]"
+              >
+                4.9 <i class="fas fa-star text-yellow-400"></i
+              ></span>
+            </div>
+            <h3 class="font-medium text-[1.1rem] mb-2">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi,
+              velit!
+            </h3>
+            <p
+              class="text-[0.88rem] text-[#333] text-justify py-2 border-t-[1.3px] border-b-[1.3px] border-[#e1e1e1]"
+            >
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+              quidem modi incidunt illum praesentium enim officiis repellendus!
+              Alias, eligendi libero itaque earum maiores voluptatibus
+              voluptates.
+            </p>
+            <div
+              class="text-justify text-[0.82rem] text-[#555] flex gap-2 mt-2.5"
+            >
+              <i class="fas fa-location-dot text-[0.8rem] mt-0.5"></i>
+              <p class="">
+                Jl. Letjend Pol. Soemarto No.127, Watumas, Purwanegara, Kec.
+                Purwokerto Utara, Kabupaten Banyumas, Jawa Tengah 53127
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="btn-product-d flex justify-center w-full mt-8">
+        <a
+          class="bg-gradient-span text-white text-[0.9rem] inline-block py-2 px-3 rounded-sm"
+          href=""
+        >
+          <i class="fas fa-shop"></i> Lihat Daftar UMKM</a
+        >
+      </div>
+    </section>
+
+    <section class="news-umkm p-[5rem_8%]">
+      <div class="header-section">
+        <span class="badge-span">Berita UMKM Terbaru</span>
+        <div class="">
+          <h3 class="font-semibold text-xl mt-2 mb-0.5">
+            Informasi & Cerita Usaha Lokal Disekitar Kampus
+          </h3>
+        </div>
+        <p class="text-[0.93rem]">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia omnis
+          molestiae in tempora labore nesciunt totam eum unde sint deserunt.
+        </p>
+      </div>
+    </section>
+
+    <section class="faq p-[5rem_8%]">
+      <div class="header-section">
+        <span class="badge-span">Pertanyaan Yang Sering Diajukan</span>
+        <div class="">
+          <h3 class="font-semibold text-xl mt-2 mb-0.5">
+            Temukan Jawaban dari Pertanyaan Seputar Temu<span class="color-span"
+              >UMKM</span
+            >
+          </h3>
+        </div>
+        <p class="text-[0.93rem]">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia omnis
+          molestiae in tempora labore nesciunt totam eum unde sint deserunt.
+        </p>
       </div>
     </section>
     <script src="./assets/js/script.js"></script>

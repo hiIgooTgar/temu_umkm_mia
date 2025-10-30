@@ -3,14 +3,14 @@
 }
 
 :root {
-  --primary_teal: #ffc50f;
-  --secondary_teal: #ffc50f;
-  --primary_green: #ff9d00;
-  --secondary_green: #fa812f;
+  --primary_yellow: #ffc50f;
+  --secondary_yellow: #ffc50f;
+  --primary_orange: #ff9d00;
+  --secondary_orange: #fa812f;
   --color-gradient: linear-gradient(
     to bottom right,
-    var(--primary_teal),
-    var(--secondary_green)
+    var(--primary_yellow),
+    var(--secondary_orange)
   );
 }
 
@@ -18,8 +18,8 @@
   color: #fff;
   background: linear-gradient(
     to bottom right,
-    var(--primary_teal),
-    var(--secondary_green)
+    var(--primary_yellow),
+    var(--secondary_orange)
   );
   font-size: 0.67rem;
   font-weight: 500;
@@ -70,8 +70,8 @@
 .color-span {
   background: linear-gradient(
     to bottom right,
-    var(--primary_teal),
-    var(--secondary_green)
+    var(--primary_yellow),
+    var(--secondary_orange)
   );
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -105,8 +105,8 @@
 .active-menu {
   background: linear-gradient(
     to bottom right,
-    var(--primary_teal),
-    var(--secondary_green)
+    var(--primary_yellow),
+    var(--secondary_orange)
   );
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -117,8 +117,8 @@
   display: inline-block;
   background: linear-gradient(
     to bottom right,
-    var(--primary_teal),
-    var(--secondary_green)
+    var(--primary_yellow),
+    var(--secondary_orange)
   );
   padding: 0.37rem 1rem;
   font-size: 0.9rem;
@@ -144,8 +144,8 @@
 .navbar .nav-right #searc-nav i:hover {
   background: linear-gradient(
     to bottom right,
-    var(--primary_teal),
-    var(--secondary_green)
+    var(--primary_yellow),
+    var(--secondary_orange)
   );
   background-clip: text;
   color: transparent;
@@ -206,9 +206,9 @@
     right: 1.5rem;
     font-size: 1.2rem;
     border-radius: 4px;
-    color: var(--primary_teal);
+    color: var(--primary_yellow);
     padding: 0.2rem;
-    border: 1.3px solid var(--primary_teal);
+    border: 1.3px solid var(--primary_yellow);
   }
 
   .navbar .nav-left .nav-menu .content .head #closeNav {
@@ -229,8 +229,8 @@
     font-size: 1.2rem;
     border-radius: 4px;
     padding: 0.43rem;
-    color: var(--primary_teal);
-    border: 1.5px solid var(--primary_teal);
+    color: var(--primary_yellow);
+    border: 1.5px solid var(--primary_yellow);
   }
 
   .navbar .nav-right #hamburger:hover {
@@ -246,4 +246,44 @@
 }
 
 @media screen and (max-width: 576px) {
+}
+
+/* input product */
+.searching-product .input-search i {
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1rem;
+}
+
+.searching-product .input-search:focus-within {
+  border: 1.5px solid var(--secondary_orange);
+}
+
+/* data-umkm section */
+.row-data-umkm .box-product:hover {
+  border: 1.5px solid rgba(250, 129, 47, 0.4);
+  background: #fbfbfb;
+  box-shadow: none;
+}
+
+.row-data-umkm .box-product:hover h3 {
+  background: linear-gradient(
+    to bottom right,
+    var(--primary_yellow),
+    var(--secondary_orange)
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.row-data-umkm .box-product .img-c:hover .overlay {
+  transform: scale(1);
+  transition: 200ms ease-out;
+}
+
+.row-data-umkm .box-product .img-c .overlay {
+  background: rgba(112, 8, 231, 0.5);
+  backdrop-filter: blur(2px);
+  transform: scale(0);
+  transition: 200ms ease-in;
 }
