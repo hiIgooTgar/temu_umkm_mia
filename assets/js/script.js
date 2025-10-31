@@ -61,3 +61,24 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
+// accordion-item faq
+const accordionButtons = document.querySelectorAll(".accordion-item button");
+
+accordionButtons.forEach((btn) => {
+  btn.addEventListener("click", function () {
+    const currentItem = this.closest(".accordion-item");
+    const currentGroup = this.closest(".accordion-group");
+    const isExpanded = this.getAttribute("aria-expanded") === "true";
+
+    currentGroup.querySelectorAll(".accordion-item button").forEach((b) => {
+      b.setAttribute("aria-expanded", "false");
+      b.closest(".accordion-item").classList.remove("active-accordion");
+    });
+
+    if (!isExpanded) {
+      this.setAttribute("aria-expanded", "true");
+      currentItem.classList.add("active-accordion");
+    }
+  });
+});

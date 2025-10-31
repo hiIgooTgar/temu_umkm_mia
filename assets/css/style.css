@@ -328,3 +328,38 @@
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+/* faq section */
+.row-faq .accordion-row .accordion-item[data-expanded="true"] {
+  border-color: var(--primary_yellow);
+  background-color: #fafafa;
+}
+
+.row-faq .accordion-row .accordion-item button[aria-expanded="true"] {
+  border-bottom: 1.5px solid var(--primary_yellow);
+}
+
+.row-faq .accordion-row button[aria-expanded="true"] {
+  padding-bottom: 0.7rem;
+  color: var(--primary_yellow);
+}
+
+.row-faq .accordion-row button[aria-expanded="true"] .icon span {
+  border: 1px solid var(--primary_yellow);
+}
+
+.row-faq .accordion-row button[aria-expanded="true"] .icon i {
+  transform: rotate(90deg);
+}
+
+.row-faq .accordion-row button[aria-expanded="true"] + .accordion-content {
+  opacity: 1;
+  max-height: 100%;
+  transition: all 200ms linear;
+  will-change: opacity, max-height;
+}
+
+.row-faq .accordion-row .accordion-content {
+  transition: opacity 200ms linear, max-height 200ms linear;
+  will-change: opacity, max-height;
+}
