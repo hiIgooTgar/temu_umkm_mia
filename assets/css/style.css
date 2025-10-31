@@ -261,8 +261,8 @@
 
 /* data-umkm section */
 .row-data-umkm .box-product:hover {
-  border: 1.5px solid rgba(250, 129, 47, 0.4);
-  background: #fbfbfb;
+  border: 1.5px solid rgba(250, 129, 47, 0.25);
+  background: #fcfcfc;
   box-shadow: none;
 }
 
@@ -286,4 +286,45 @@
   backdrop-filter: blur(2px);
   transform: scale(0);
   transition: 200ms ease-in;
+}
+
+/* box-news */
+.box-news-l:hover {
+  border: 1.5px solid rgba(250, 129, 47, 0.25);
+  background: #fcfcfc;
+  box-shadow: none;
+}
+
+.box-news-l:hover .img-d img {
+  transform: scale(1.1);
+}
+
+.box-news-l:hover h3 {
+  background: linear-gradient(
+    to bottom right,
+    var(--primary_yellow),
+    var(--secondary_orange)
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.box-news-r:hover {
+  border: 1.5px solid rgba(250, 129, 47, 0.25);
+  background: #fcfcfc;
+  box-shadow: none;
+}
+
+.box-news-r:hover .img-d img {
+  transform: scale(1.1);
+}
+
+.box-news-r:hover h3 {
+  background: linear-gradient(
+    to bottom right,
+    var(--primary_yellow),
+    var(--secondary_orange)
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
