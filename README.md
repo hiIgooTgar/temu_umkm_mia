@@ -34,23 +34,6 @@ Website ini memudahkan pengguna menemukan informasi usaha melalui fitur pencaria
 
 ---
 
-## 🌟 Progress Saat Ini
-✅ Desain landing page (hero section, daftar UMKM, berita terbaru) 
-
-✅ Desain halaman detail UMKM dengan integrasi Google Maps
-
-✅ Desain halaman tentang kami (visi, misi, dan tim pengembang)
-
-✅ Desain halaman berita terbaru & detail berita
-
-✅ Selesai membuat landing page
-
-✅ Selesai membuat halaman tentang kami
-
-🔧 Proses berjalan **72 %** tinggal membuat halaman website
-
----
-
 ## 👥 Tim Pengembang
 Nama Tim: **Baru Terbit**
 
