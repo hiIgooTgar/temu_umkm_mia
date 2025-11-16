@@ -123,6 +123,79 @@ document.fonts.ready.then(() => {
   });
 });
 
+// filter data UMKM
+const categoryButtons = document.querySelectorAll(".list-category span");
+const umkmCards = document.querySelectorAll(".box-product");
+const searchInput = document.getElementById("searchUMKM");
+const notFoundSection = document.querySelector(".not-found-sec");
+const btnProductNotFoundSection = document.querySelector(".btn-product-d");
+
+function setChildrenColor(el, removeClasses = [], addClasses = []) {
+  el.classList.remove(...removeClasses);
+  el.classList.add(...addClasses);
+  el.querySelectorAll("*").forEach((child) => {
+    child.classList.remove(...removeClasses);
+    child.classList.add(...addClasses);
+  });
+}
+
+function filterUMKM() {
+  const selectedCategory = document
+    .querySelector(".list-category span.bg-violet-700")
+    ?.getAttribute("data-filter");
+  const searchValue = searchInput.value.toLowerCase();
+
+  let visibleCount = 0;
+
+  umkmCards.forEach((card) => {
+    const cardCategory = card.getAttribute("data-category");
+    const nameUMKM = card
+      .querySelector(".name-umkm-j")
+      .textContent.toLowerCase();
+    const description = card.querySelector("p").textContent.toLowerCase();
+
+    const matchCategory =
+      selectedCategory === "all" || cardCategory === selectedCategory;
+    const matchSearch =
+      nameUMKM.includes(searchValue) || description.includes(searchValue);
+
+    if (matchCategory && matchSearch) {
+      card.style.display = "block";
+      visibleCount++;
+    } else {
+      card.style.display = "none";
+    }
+  });
+
+  if (visibleCount === 0) {
+    if (notFoundSection) notFoundSection.style.display = "block";
+    if (btnProductNotFoundSection)
+      btnProductNotFoundSection.style.display = "none";
+  } else {
+    if (notFoundSection) notFoundSection.style.display = "none";
+    if (btnProductNotFoundSection)
+      btnProductNotFoundSection.style.display = "flex";
+  }
+}
+
+categoryButtons.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    categoryButtons.forEach((b) => {
+      b.classList.remove("bg-violet-700", "text-white", "border-violet-700");
+      b.classList.add("border-[#c4c4c4]", "text-[#777]");
+      setChildrenColor(b, ["text-white"], ["text-[#777]"]);
+    });
+
+    btn.classList.add("bg-violet-700", "text-white", "border-violet-700");
+    btn.classList.remove("text-[#777]");
+    setChildrenColor(btn, ["text-[#777]"], ["text-white"]);
+    filterUMKM();
+  });
+});
+
+if (searchInput) searchInput.addEventListener("keyup", filterUMKM);
+filterUMKM();
+
 // documentation photo UMKM
 var swiper = new Swiper(".documentPhotoUMKM", {
   spaceBetween: 20,
