@@ -38,7 +38,6 @@
             <a href="./umkm-lokal.html" class="nav-list active-menu"
               >Data UMKM Lokal</a
             >
-            <a href="./testimoni.html" class="nav-list">Testimoni</a>
             <a href="./blog.html" class="nav-list">Blog</a>
             <a class="btn-started" href="../auth/sign-in.html">Get Started</a>
           </div>
@@ -51,47 +50,63 @@
       </div>
     </nav>
 
-    <section class="data-umkm p-[7rem_8%_4rem]">
+    <section class="data-umkm p-[7rem_8%_6rem]">
       <div class="header-section" data-aos="fade-up">
         <span class="badge-span">Daftar UMKM</span>
         <h3 class="font-semibold text-xl mt-3 mb-0.5">
           Jelajahi UMKM Sekitar Kampus Amikom Purwokerto
         </h3>
         <p class="text-[0.93rem]">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia omnis
-          molestiae in tempora labore nesciunt totam eum unde sint deserunt.
+          Temukan beragam usaha lokal yang ada di sekitar kampus
         </p>
       </div>
       <div
-        class="categories my-4 flex flex-col md:flex-row gap-6 items-center"
+        class="categories my-4 flex gap-6 items-center flex-col lg:flex-row"
         data-aos="fade-up"
       >
         <div
-          class="list-category flex-[1_1_100%] md:flex-[1_1_65%] flex gap-4 items-center"
+          class="list-category flex-[1_1_100%] lg:flex-[1_1_65%] flex gap-4 items-center"
         >
           <span
-            class="border-[1.5px] border-violet-700 px-3 py-1.5 text-[0.9rem] rounded-md bg-violet-700 text-white"
-            ><i class="fas fa-layer-group"></i> Semua Kategori</span
+            data-filter="all"
+            class="border-[1.5px] cursor-pointer border-violet-700 px-3 py-1.5 text-[0.9rem] rounded-md bg-violet-700 text-white"
           >
+            <i class="fas fa-layer-group"></i>
+            <span class="hidden md:inline"> Semua Kategori</span>
+          </span>
+
           <span
-            class="border-[1.5px] border-[#c4c4c4] px-3 py-1.5 text-[0.9rem] rounded-md text-[#777]"
-            ><i class="fas fa-utensils"></i> Makanan & Minuman</span
+            data-filter="makanan-minuman"
+            class="border-[1.5px] cursor-pointer border-[#c4c4c4] px-3 py-1.5 text-[0.9rem] rounded-md text-[#777]"
           >
+            <i class="fas fa-utensils"></i>
+            <span class="hidden md:inline"> Makanan & Minuman</span>
+          </span>
+
           <span
-            class="border-[1.5px] border-[#c4c4c4] px-3 py-1.5 text-[0.9rem] rounded-md text-[#777]"
-            ><i class="fas fa-handshake"></i> Jasa & Layanan</span
+            data-filter="jasa-layanan"
+            class="border-[1.5px] cursor-pointer border-[#c4c4c4] px-3 py-1.5 text-[0.9rem] rounded-md text-[#777]"
           >
+            <i class="fas fa-handshake"></i>
+            <span class="hidden md:inline"> Jasa & Layanan</span>
+          </span>
+
           <span
-            class="border-[1.5px] border-[#c4c4c4] px-3 py-1.5 text-[0.9rem] rounded-md text-[#777]"
-            ><i class="fas fa-boxes-packing"></i> Produk Kreatif</span
+            data-filter="produk-kreatif"
+            class="border-[1.5px] cursor-pointer border-[#c4c4c4] px-3 py-1.5 text-[0.9rem] rounded-md text-[#777]"
           >
+            <i class="fas fa-boxes-packing"></i>
+            <span class="hidden md:inline"> Produk Kreatif</span>
+          </span>
         </div>
-        <div class="searching-product flex-[1_1_100%] md:flex-[1_1_35%]">
+
+        <div class="searching-product flex-[1_1_100%] lg:flex-[1_1_35%]">
           <div
-            class="input-search w-full flex items-center gap-[0.5rem] border-[1.5px] border-[#c4c4c4] rounded-[5px] px-3 py-2"
+            class="input-search flex items-center gap-[0.5rem] border-[1.5px] border-[#c4c4c4] rounded-[5px] px-3 py-2"
           >
             <i class="fas fa-magnifying-glass bg-gradient-span p-[2px]"></i>
             <input
+              id="searchUMKM"
               placeholder="Masukan pencarian UMKM Lokal"
               type="text"
               class="search-input w-full border-none outline-none text-[0.9rem] py-0 px-[0.25rem]"
@@ -100,10 +115,11 @@
         </div>
       </div>
       <div
-        class="row-data-umkm grid grid-cols-1 md:grid-cols-3 gap-5 mt-7"
+        class="row-data-umkm grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-7"
         data-aos="fade-up"
       >
         <div
+          data-category="produk-kreatif"
           class="box-product border-[1.5px] border-[#ddd] shadow p-2.5 rounded-md"
         >
           <div class="img-c relative w-full h-[220px]">
@@ -117,7 +133,7 @@
             >
               <a
                 class="bg-gradient-span text-white text-[0.85rem] inline-block py-1 px-3 rounded-sm"
-                href="./produk/detail-produk.html"
+                href="./src/produk/detail-produk.html"
               >
                 Detail UMKM</a
               >
@@ -135,29 +151,31 @@
                 4.5 <i class="fas fa-star text-yellow-400"></i
               ></span>
             </div>
-            <h3 class="font-medium text-[1.1rem] mb-2">
+            <h3 class="name-umkm-j font-medium text-[1.1rem] mb-2">
               Agung Aquarium
             </h3>
             <p
               class="text-[0.88rem] text-[#333] text-justify py-2 border-t-[1.3px] border-b-[1.3px] border-[#e1e1e1]"
             >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
-              quidem modi incidunt illum praesentium enim officiis repellendus!
-              Alias, eligendi libero itaque earum maiores voluptatibus
-              voluptates.
+              Agung Aquarium merupakan salah satu usaha yang bergerak di bidang
+              penjualan ikan hias dan perlengkapan akuarium di wilayah
+              Purwokerto. Usaha ini awalnya berdiri di pinggir jalan utama
+              seba...
             </p>
             <div
               class="text-justify text-[0.82rem] text-[#555] flex gap-2 mt-2.5"
             >
               <i class="fas fa-location-dot text-[0.8rem] mt-0.5"></i>
               <p class="">
-                Mina Restu, Pasar Ikan Hias, Karangjambu, Purwanegara, Kec. Purwokerto Utara, 
-                Kabupaten Banyumas, Jawa Tengah 53127 (750 Meter dari Universitas Amikom Purwokerto)
+                Mina Restu, Pasar Ikan Hias, Karangjambu, Purwanegara, Kec.
+                Purwokerto Utara, Kabupaten Banyumas, Jawa Tengah 53127 (750
+                Meter dari Universitas Amikom Purwokerto)
               </p>
             </div>
           </div>
         </div>
         <div
+          data-category="makanan-minuman"
           class="box-product border-[1.5px] border-[#ddd] shadow p-2.5 rounded-md"
         >
           <div class="img-c relative w-full h-[220px]">
@@ -171,7 +189,7 @@
             >
               <a
                 class="bg-gradient-span text-white text-[0.85rem] inline-block py-1 px-3 rounded-sm"
-                href="./produk/detail-produk.html"
+                href="./src/produk/detail-produk.html"
               >
                 Detail UMKM</a
               >
@@ -189,29 +207,30 @@
                 5.0 <i class="fas fa-star text-yellow-400"></i
               ></span>
             </div>
-            <h3 class="font-medium text-[1.1rem] mb-2">
+            <h3 class="name-umkm-j font-medium text-[1.1rem] mb-2">
               Angkringan Titik Lapar
             </h3>
             <p
               class="text-[0.88rem] text-[#333] text-justify py-2 border-t-[1.3px] border-b-[1.3px] border-[#e1e1e1]"
             >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
-              quidem modi incidunt illum praesentium enim officiis repellendus!
-              Alias, eligendi libero itaque earum maiores voluptatibus
-              voluptates.
+              Angkringan Titik Lapar menjadi tempat nongkrong favorit mahasiswa
+              yang mencari suasana santai dan harga bersahabat. Menu yang
+              ditawarkan beragam, mulai dari sate-satean, nasi kucing, goreng...
             </p>
             <div
               class="text-justify text-[0.82rem] text-[#555] flex gap-2 mt-2.5"
             >
               <i class="fas fa-location-dot text-[0.8rem] mt-0.5"></i>
               <p class="">
-                Jl. Letjend Pol. Soemarto, Watumas, Purwanegara, Kec. Purwokerto Tim., 
-                Kabupaten Banyumas, Jawa Tengah 53127 (40 m dari Universitas Amikom Purwokerto)
+                Jl. Letjend Pol. Soemarto, Watumas, Purwanegara, Kec. Purwokerto
+                Tim., Kabupaten Banyumas, Jawa Tengah 53127 (40 m dari
+                Universitas Amikom Purwokerto)
               </p>
             </div>
           </div>
         </div>
         <div
+          data-category="makanan-minuman"
           class="box-product border-[1.5px] border-[#ddd] shadow p-2.5 rounded-md"
         >
           <div class="img-c relative w-full h-[220px]">
@@ -225,7 +244,7 @@
             >
               <a
                 class="bg-gradient-span text-white text-[0.85rem] inline-block py-1 px-3 rounded-sm"
-                href="./produk/detail-produk.html"
+                href="./src/produk/detail-produk.html"
               >
                 Detail UMKM</a
               >
@@ -243,29 +262,30 @@
                 4.6 <i class="fas fa-star text-yellow-400"></i
               ></span>
             </div>
-            <h3 class="font-medium text-[1.1rem] mb-2">
+            <h3 class="name-umkm-j font-medium text-[1.1rem] mb-2">
               Batagor Niki Sari
             </h3>
             <p
               class="text-[0.88rem] text-[#333] text-justify py-2 border-t-[1.3px] border-b-[1.3px] border-[#e1e1e1]"
             >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
-              quidem modi incidunt illum praesentium enim officiis repellendus!
-              Alias, eligendi libero itaque earum maiores voluptatibus
-              voluptates.
+              Batagor Niki Sari merupakan usaha kuliner lokal dengan cita rasa
+              batagor dan siomay khas Bandung yang disajikan dengan bahan segar
+              dan racikan bumbu khas rumahan. Dengan cita rasa yang te...
             </p>
             <div
               class="text-justify text-[0.82rem] text-[#555] flex gap-2 mt-2.5"
             >
               <i class="fas fa-location-dot text-[0.8rem] mt-0.5"></i>
               <p class="">
-                Jl. Letjend Pol. Soemarto No.544-526, Karangjambu, Purwanegara, Kec. Purwokerto Utara,
-                 Kabupaten Banyumas, Jawa Tengah 53127 (650 Meter dari Universitas Amikom Purwokerto)
+                Jl. Letjend Pol. Soemarto No.544-526, Karangjambu, Purwanegara,
+                Kec. Purwokerto Utara, Kabupaten Banyumas, Jawa Tengah 53127
+                (650 Meter dari Universitas Amikom Purwokerto)
               </p>
             </div>
           </div>
         </div>
         <div
+          data-category="makanan-minuman"
           class="box-product border-[1.5px] border-[#ddd] shadow p-2.5 rounded-md"
         >
           <div class="img-c relative w-full h-[220px]">
@@ -279,7 +299,7 @@
             >
               <a
                 class="bg-gradient-span text-white text-[0.85rem] inline-block py-1 px-3 rounded-sm"
-                href="./produk/detail-produk.html"
+                href="./src/produk/detail-produk.html"
               >
                 Detail UMKM</a
               >
@@ -297,29 +317,30 @@
                 4.9 <i class="fas fa-star text-yellow-400"></i
               ></span>
             </div>
-            <h3 class="font-medium text-[1.1rem] mb-2">
+            <h3 class="name-umkm-j font-medium text-[1.1rem] mb-2">
               Chicken'Q
             </h3>
             <p
               class="text-[0.88rem] text-[#333] text-justify py-2 border-t-[1.3px] border-b-[1.3px] border-[#e1e1e1]"
             >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
-              quidem modi incidunt illum praesentium enim officiis repellendus!
-              Alias, eligendi libero itaque earum maiores voluptatibus
-              voluptates.
+              Chicken’Q merupakan usaha kuliner yang berfokus pada hidangan ayam
+              goreng dengan berbagai varian menu yang menggugah selera. Usaha
+              ini dikenal karena menyajikan pilihan menu lengkap sepe...
             </p>
             <div
               class="text-justify text-[0.82rem] text-[#555] flex gap-2 mt-2.5"
             >
               <i class="fas fa-location-dot text-[0.8rem] mt-0.5"></i>
               <p class="">
-                Jl. Letjend Pol. Soemarto No.334, Karangjambu, Purwanegara, Kec. Purwokerto Utara, 
-                Kabupaten Banyumas, Jawa Tengah 53127 (800 m dari Universitas Amikom Purwokerto)
+                Jl. Letjend Pol. Soemarto No.334, Karangjambu, Purwanegara, Kec.
+                Purwokerto Utara, Kabupaten Banyumas, Jawa Tengah 53127 (800 m
+                dari Universitas Amikom Purwokerto)
               </p>
             </div>
           </div>
         </div>
         <div
+          data-category="makanan-minuman"
           class="box-product border-[1.5px] border-[#ddd] shadow p-2.5 rounded-md"
         >
           <div class="img-c relative w-full h-[220px]">
@@ -333,7 +354,7 @@
             >
               <a
                 class="bg-gradient-span text-white text-[0.85rem] inline-block py-1 px-3 rounded-sm"
-                href="./produk/detail-produk.html"
+                href="./src/produk/detail-produk.html"
               >
                 Detail UMKM</a
               >
@@ -351,29 +372,31 @@
                 4.5 <i class="fas fa-star text-yellow-400"></i
               ></span>
             </div>
-            <h3 class="font-medium text-[1.1rem] mb-2">
+            <h3 class="name-umkm-j font-medium text-[1.1rem] mb-2">
               Depot Bubur Mang Iwan
             </h3>
             <p
               class="text-[0.88rem] text-[#333] text-justify py-2 border-t-[1.3px] border-b-[1.3px] border-[#e1e1e1]"
             >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
-              quidem modi incidunt illum praesentium enim officiis repellendus!
-              Alias, eligendi libero itaque earum maiores voluptatibus
-              voluptates.
+              Bubur Mang Iwan merupakan kuliner legendaris yang menyajikan bubur
+              ayam dengan cita rasa khas dan konsisten. Dengan mempertahankan
+              cita rasa asli dari racikan bubur yang lembut ...
             </p>
             <div
               class="text-justify text-[0.82rem] text-[#555] flex gap-2 mt-2.5"
             >
               <i class="fas fa-location-dot text-[0.8rem] mt-0.5"></i>
               <p class="">
-                Jl. Letjend Pol. Soemarto Depan Mako Brimob No.589A, Karangjambu, Purwanegara, Kec. Purwokerto Utara,
-                 Kabupaten Banyumas, Jawa Tengah 53127 (450 Meter dari Universitas Amikom Purwokerto)
+                Jl. Letjend Pol. Soemarto Depan Mako Brimob No.589A,
+                Karangjambu, Purwanegara, Kec. Purwokerto Utara, Kabupaten
+                Banyumas, Jawa Tengah 53127 (450 Meter dari Universitas Amikom
+                Purwokerto)
               </p>
             </div>
           </div>
         </div>
         <div
+          data-category="makanan-minuman"
           class="box-product border-[1.5px] border-[#ddd] shadow p-2.5 rounded-md"
         >
           <div class="img-c relative w-full h-[220px]">
@@ -387,7 +410,7 @@
             >
               <a
                 class="bg-gradient-span text-white text-[0.85rem] inline-block py-1 px-3 rounded-sm"
-                href="./produk/detail-produk.html"
+                href="./src/produk/detail-produk.html"
               >
                 Detail UMKM</a
               >
@@ -405,29 +428,30 @@
                 4.5 <i class="fas fa-star text-yellow-400"></i
               ></span>
             </div>
-            <h3 class="font-medium text-[1.1rem] mb-2">
+            <h3 class="name-umkm-j font-medium text-[1.1rem] mb-2">
               Es Mbludag
             </h3>
             <p
               class="text-[0.88rem] text-[#333] text-justify py-2 border-t-[1.3px] border-b-[1.3px] border-[#e1e1e1]"
             >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
-              quidem modi incidunt illum praesentium enim officiis repellendus!
-              Alias, eligendi libero itaque earum maiores voluptatibus
-              voluptates.
+              Es Mbludag merupakan usaha minuman segar yang dijalankan oleh
+              pasangan suami istri di kawasan Purwokerto. Usaha ini berawal dari
+              halaman rumah yang kemudian disulap menjadi kedai sederhana ...
             </p>
             <div
               class="text-justify text-[0.82rem] text-[#555] flex gap-2 mt-2.5"
             >
               <i class="fas fa-location-dot text-[0.8rem] mt-0.5"></i>
               <p class="">
-                Jl. Letjend Pol. Soemarto No.584, Karangjambu, Purwanegara, Kec. Purwokerto Utara, 
-                Kabupaten Banyumas, Jawa Tengah 53127 (500 m dari Universitas Amikom Purwokerto)
+                Jl. Letjend Pol. Soemarto No.584, Karangjambu, Purwanegara, Kec.
+                Purwokerto Utara, Kabupaten Banyumas, Jawa Tengah 53127 (500 m
+                dari Universitas Amikom Purwokerto)
               </p>
             </div>
           </div>
         </div>
         <div
+          data-category="makanan-minuman"
           class="box-product border-[1.5px] border-[#ddd] shadow p-2.5 rounded-md"
         >
           <div class="img-c relative w-full h-[220px]">
@@ -441,7 +465,7 @@
             >
               <a
                 class="bg-gradient-span text-white text-[0.85rem] inline-block py-1 px-3 rounded-sm"
-                href="./produk/detail-produk.html"
+                href="./src/produk/detail-produk.html"
               >
                 Detail UMKM</a
               >
@@ -459,28 +483,30 @@
                 5.0 <i class="fas fa-star text-yellow-400"></i
               ></span>
             </div>
-            <h3 class="font-medium text-[1.1rem] mb-2">
+            <h3 class="name-umkm-j font-medium text-[1.1rem] mb-2">
               Mie Ayam & Bakso Seleraku
             </h3>
             <p
               class="text-[0.88rem] text-[#333] text-justify py-2 border-t-[1.3px] border-b-[1.3px] border-[#e1e1e1]"
             >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
-              quidem modi incidunt illum praesentium enim officiis repellendus!
-              Alias, eligendi libero itaque earum maiores voluptatibus
-              voluptates.
+              Mie Ayam & Bakso Seleraku merupakan usaha kuliner yang telah
+              beroperasi sejak tahun 2015, menghadirkan cita rasa mie ayam
+              rumahan yang sederhana namun menggugah selera. kedai ini dike...
             </p>
             <div
               class="text-justify text-[0.82rem] text-[#555] flex gap-2 mt-2.5"
             >
               <i class="fas fa-location-dot text-[0.8rem] mt-0.5"></i>
               <p class="">
-                Jl. Letjend Pol. Soemarto, Karangjambu, Purwanegara, Kec. Purwokerto Utara, Kabupaten Banyumas, Jawa Tengah 53127 (650 Meter dari Universitas Amikom Purwokerto)
+                Jl. Letjend Pol. Soemarto, Karangjambu, Purwanegara, Kec.
+                Purwokerto Utara, Kabupaten Banyumas, Jawa Tengah 53127 (650
+                Meter dari Universitas Amikom Purwokerto)
               </p>
             </div>
           </div>
         </div>
         <div
+          data-category="produk-kreatif"
           class="box-product border-[1.5px] border-[#ddd] shadow p-2.5 rounded-md"
         >
           <div class="img-c relative w-full h-[220px]">
@@ -494,7 +520,7 @@
             >
               <a
                 class="bg-gradient-span text-white text-[0.85rem] inline-block py-1 px-3 rounded-sm"
-                href="./produk/detail-produk.html"
+                href="./src/produk/detail-produk.html"
               >
                 Detail UMKM</a
               >
@@ -512,29 +538,30 @@
                 5.0 <i class="fas fa-star text-yellow-400"></i
               ></span>
             </div>
-            <h3 class="font-medium text-[1.1rem] mb-2">
+            <h3 class="name-umkm-j font-medium text-[1.1rem] mb-2">
               Toko RAS 99
             </h3>
             <p
               class="text-[0.88rem] text-[#333] text-justify py-2 border-t-[1.3px] border-b-[1.3px] border-[#e1e1e1]"
             >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
-              quidem modi incidunt illum praesentium enim officiis repellendus!
-              Alias, eligendi libero itaque earum maiores voluptatibus
-              voluptates.
+              Toko RAS 99 menjual berbagai perlengkapan rumah tangga seperti
+              perabot plastik, ember, dan kanvas. Harga produk di toko ini cukup
+              terjangkau, dari kisaran Rp.2000 sampai ratusan maupun jutaan ...
             </p>
             <div
               class="text-justify text-[0.82rem] text-[#555] flex gap-2 mt-2.5"
             >
               <i class="fas fa-location-dot text-[0.8rem] mt-0.5"></i>
               <p class="">
-                Jl. Candrawijaya, RT.3/RW.2, Dusun II, Purwosari, Kec. Baturaden, Kabupaten Banyumas, 
-                Jawa Tengah (700 m dari Universitas Amikom Purwokerto)
+                Jl. Candrawijaya, RT.3/RW.2, Dusun II, Purwosari, Kec.
+                Baturaden, Kabupaten Banyumas, Jawa Tengah (700 m dari
+                Universitas Amikom Purwokerto)
               </p>
             </div>
           </div>
         </div>
         <div
+          data-category="produk-kreatif"
           class="box-product border-[1.5px] border-[#ddd] shadow p-2.5 rounded-md"
         >
           <div class="img-c relative w-full h-[220px]">
@@ -548,7 +575,7 @@
             >
               <a
                 class="bg-gradient-span text-white text-[0.85rem] inline-block py-1 px-3 rounded-sm"
-                href="./produk/detail-produk.html"
+                href="./src/produk/detail-produk.html"
               >
                 Detail UMKM</a
               >
@@ -566,29 +593,29 @@
                 4.5 <i class="fas fa-star text-yellow-400"></i
               ></span>
             </div>
-            <h3 class="font-medium text-[1.1rem] mb-2">
-              Toko RR
-            </h3>
+            <h3 class="name-umkm-j font-medium text-[1.1rem] mb-2">Toko RR</h3>
             <p
               class="text-[0.88rem] text-[#333] text-justify py-2 border-t-[1.3px] border-b-[1.3px] border-[#e1e1e1]"
             >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
-              quidem modi incidunt illum praesentium enim officiis repellendus!
-              Alias, eligendi libero itaque earum maiores voluptatibus
-              voluptates.
+              Toko RR merupakan usaha lokal yang menyediakan berbagai
+              perlengkapan dan aksesoris seperti mantel, topeng, sarung tangan,
+              dan kaos kaki. Berlokasi di sekitar kawasan Purwokerto, toko ini
+              ...
             </p>
             <div
               class="text-justify text-[0.82rem] text-[#555] flex gap-2 mt-2.5"
             >
               <i class="fas fa-location-dot text-[0.8rem] mt-0.5"></i>
               <p class="">
-                Jl. Letjend Pol. Soemarto No.44, Karanganjing, Purwanegara, Kec. Purwokerto Utara,
-                 Kabupaten Banyumas, Jawa Tengah 53127 (800 m dari Universitas Amikom Purwokerto)
+                Jl. Letjend Pol. Soemarto No.44, Karanganjing, Purwanegara, Kec.
+                Purwokerto Utara, Kabupaten Banyumas, Jawa Tengah 53127 (800 m
+                dari Universitas Amikom Purwokerto)
               </p>
             </div>
           </div>
         </div>
         <div
+          data-category="jasa-layanan"
           class="box-product border-[1.5px] border-[#ddd] shadow p-2.5 rounded-md"
         >
           <div class="img-c relative w-full h-[220px]">
@@ -602,7 +629,7 @@
             >
               <a
                 class="bg-gradient-span text-white text-[0.85rem] inline-block py-1 px-3 rounded-sm"
-                href="./produk/detail-produk.html"
+                href="./src/produk/detail-produk.html"
               >
                 Detail UMKM</a
               >
@@ -620,16 +647,16 @@
                 4.2 <i class="fas fa-star text-yellow-400"></i
               ></span>
             </div>
-            <h3 class="font-medium text-[1.1rem] mb-2">
+            <h3 class="name-umkm-j font-medium text-[1.1rem] mb-2">
               Top Laudry
             </h3>
             <p
               class="text-[0.88rem] text-[#333] text-justify py-2 border-t-[1.3px] border-b-[1.3px] border-[#e1e1e1]"
             >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
-              quidem modi incidunt illum praesentium enim officiis repellendus!
-              Alias, eligendi libero itaque earum maiores voluptatibus
-              voluptates.
+              Top Laundry merupakan layanan profesional dan menjadi pilihan bagi
+              mahasiswa, pekerja, dan keluarga yang membutuhkan layanan cuci
+              pakaian yang bersih, rapi, dan beraroma segar. Dengan fokus pada
+              ...
             </p>
             <div
               class="text-justify text-[0.82rem] text-[#555] flex gap-2 mt-2.5"
@@ -637,270 +664,36 @@
               <i class="fas fa-location-dot text-[0.8rem] mt-0.5"></i>
               <p class="">
                 Jl. Letjend Pol. Soemarto, Karangjambu, Purwanegara, Kec.
-                Purwokerto Utara, Kabupaten Banyumas, Jawa Tengah 53127 (450 m dari Universitas Amikom Purwokerto)
-              </p>
-            </div>
-          </div>
-        </div>
-        <div
-          class="box-product border-[1.5px] border-[#ddd] shadow p-2.5 rounded-md"
-        >
-          <div class="img-c relative w-full h-[220px]">
-            <img
-              class="rounded-md w-full h-full object-cover object-center"
-              src="./images/about.jpg"
-              alt=""
-            />
-            <div
-              class="overlay absolute inset-0 flex justify-center items-center w-full h-full"
-            >
-              <a
-                class="bg-gradient-span text-white text-[0.85rem] inline-block py-1 px-3 rounded-sm"
-                href="./produk/detail-produk.html"
-              >
-                Detail UMKM</a
-              >
-            </div>
-          </div>
-          <div class="d-desc">
-            <div class="category-d flex gap-4 justify-between mt-4 mb-2.5">
-              <span
-                class="px-2 pt-[0.3rem] pb-[0.0.5rem] text-[0.8rem] rounded-md bg-[rgba(112,8,231,0.15)] text-violet-700"
-                ><i class="fas fa-utensils"></i> Makanan & Minuman</span
-              >
-              <span
-                class="rating-p px-2 py-1 text-[0.8rem] rounded-md border-[1.5px] border-[#e2e2e2] text-[#666]"
-              >
-                4.9 <i class="fas fa-star text-yellow-400"></i
-              ></span>
-            </div>
-            <h3 class="font-medium text-[1.1rem] mb-2">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi,
-              velit!
-            </h3>
-            <p
-              class="text-[0.88rem] text-[#333] text-justify py-2 border-t-[1.3px] border-b-[1.3px] border-[#e1e1e1]"
-            >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
-              quidem modi incidunt illum praesentium enim officiis repellendus!
-              Alias, eligendi libero itaque earum maiores voluptatibus
-              voluptates.
-            </p>
-            <div
-              class="text-justify text-[0.82rem] text-[#555] flex gap-2 mt-2.5"
-            >
-              <i class="fas fa-location-dot text-[0.8rem] mt-0.5"></i>
-              <p class="">
-                Jl. Letjend Pol. Soemarto No.127, Watumas, Purwanegara, Kec.
-                Purwokerto Utara, Kabupaten Banyumas, Jawa Tengah 53127
-              </p>
-            </div>
-          </div>
-        </div>
-        <div
-          class="box-product border-[1.5px] border-[#ddd] shadow p-2.5 rounded-md"
-        >
-          <div class="img-c relative w-full h-[220px]">
-            <img
-              class="rounded-md w-full h-full object-cover object-center"
-              src="./images/about.jpg"
-              alt=""
-            />
-            <div
-              class="overlay absolute inset-0 flex justify-center items-center w-full h-full"
-            >
-              <a
-                class="bg-gradient-span text-white text-[0.85rem] inline-block py-1 px-3 rounded-sm"
-                href="./produk/detail-produk.html"
-              >
-                Detail UMKM</a
-              >
-            </div>
-          </div>
-          <div class="d-desc">
-            <div class="category-d flex gap-4 justify-between mt-4 mb-2.5">
-              <span
-                class="px-2 pt-[0.3rem] pb-[0.0.5rem] text-[0.8rem] rounded-md bg-[rgba(112,8,231,0.15)] text-violet-700"
-                ><i class="fas fa-utensils"></i> Makanan & Minuman</span
-              >
-              <span
-                class="rating-p px-2 py-1 text-[0.8rem] rounded-md border-[1.5px] border-[#e2e2e2] text-[#666]"
-              >
-                4.9 <i class="fas fa-star text-yellow-400"></i
-              ></span>
-            </div>
-            <h3 class="font-medium text-[1.1rem] mb-2">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi,
-              velit!
-            </h3>
-            <p
-              class="text-[0.88rem] text-[#333] text-justify py-2 border-t-[1.3px] border-b-[1.3px] border-[#e1e1e1]"
-            >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
-              quidem modi incidunt illum praesentium enim officiis repellendus!
-              Alias, eligendi libero itaque earum maiores voluptatibus
-              voluptates.
-            </p>
-            <div
-              class="text-justify text-[0.82rem] text-[#555] flex gap-2 mt-2.5"
-            >
-              <i class="fas fa-location-dot text-[0.8rem] mt-0.5"></i>
-              <p class="">
-                Jl. Letjend Pol. Soemarto No.127, Watumas, Purwanegara, Kec.
-                Purwokerto Utara, Kabupaten Banyumas, Jawa Tengah 53127
+                Purwokerto Utara, Kabupaten Banyumas, Jawa Tengah 53127 (450 m
+                dari Universitas Amikom Purwokerto)
               </p>
             </div>
           </div>
         </div>
       </div>
-      <div class="pagination-umkm">
-        <div class="w-full pt-8 flex items-center justify-center">
-          <div class="py-3 border rounded-lg dark:border-gray-600">
-            <ol
-              class="flex items-center text-sm text-gray-500 divide-x rtl:divide-x-reverse divide-gray-300 dark:text-gray-400 dark:divide-gray-600"
-            >
-              <li>
-                <button
-                  type="button"
-                  class="relative flex items-center justify-center font-medium min-w-[2rem] px-1.5 h-8 -my-3 rounded-md outline-none hover:bg-gray-500/5 focus:bg-yellow-500/10 focus:ring-2 focus:ring-yellow-500 dark:hover:bg-gray-400/5 transition text-yellow-600"
-                  aria-label="Previous"
-                  rel="prev"
-                >
-                  <svg
-                    class="w-5 h-5 rtl:scale-x-[-1]"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                    aria-hidden="true"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z"
-                      clip-rule="evenodd"
-                    ></path>
-                  </svg>
-                </button>
-              </li>
-
-              <li>
-                <button
-                  type="button"
-                  class="relative flex items-center justify-center font-medium min-w-[2rem] px-1.5 h-8 -my-3 rounded-md outline-none transition text-yellow-600 focus:underline bg-yellow-500/10 ring-2 ring-yellow-500"
-                >
-                  <span>1</span>
-                </button>
-              </li>
-              <li>
-                <button
-                  type="button"
-                  class="relative flex items-center justify-center font-medium min-w-[2rem] px-1.5 h-8 -my-3 rounded-md outline-none hover:bg-gray-500/5 focus:bg-yellow-500/10 focus:ring-2 focus:ring-yellow-500 dark:hover:bg-gray-400/5 focus:text-yellow-600 transition"
-                >
-                  <span>2</span>
-                </button>
-              </li>
-              <li>
-                <button
-                  type="button"
-                  class="relative flex items-center justify-center font-medium min-w-[2rem] px-1.5 h-8 -my-3 rounded-md outline-none hover:bg-gray-500/5 focus:bg-yellow-500/10 focus:ring-2 focus:ring-yellow-500 dark:hover:bg-gray-400/5 focus:text-yellow-600 transition"
-                >
-                  <span>3</span>
-                </button>
-              </li>
-              <li>
-                <button
-                  type="button"
-                  class="relative flex items-center justify-center font-medium min-w-[2rem] px-1.5 h-8 -my-3 rounded-md outline-none hover:bg-gray-500/5 focus:bg-yellow-500/10 focus:ring-2 focus:ring-yellow-500 dark:hover:bg-gray-400/5 focus:text-yellow-600 transition"
-                >
-                  <span>4</span>
-                </button>
-              </li>
-              <li>
-                <button
-                  type="button"
-                  class="relative flex items-center justify-center font-medium min-w-[2rem] px-1.5 h-8 -my-3 rounded-md outline-none hover:bg-gray-500/5 focus:bg-yellow-500/10 focus:ring-2 focus:ring-yellow-500 dark:hover:bg-gray-400/5 focus:text-yellow-600 transition"
-                >
-                  <span>5</span>
-                </button>
-              </li>
-              <li>
-                <button
-                  type="button"
-                  class="relative flex items-center justify-center font-medium min-w-[2rem] px-1.5 h-8 -my-3 rounded-md outline-none hover:bg-gray-500/5 focus:bg-yellow-500/10 focus:ring-2 focus:ring-yellow-500 dark:hover:bg-gray-400/5 focus:text-yellow-600 transition"
-                >
-                  <span>6</span>
-                </button>
-              </li>
-              <li>
-                <button
-                  disabled=""
-                  type="button"
-                  class="relative flex items-center justify-center font-medium min-w-[2rem] px-1.5 h-8 -my-3 rounded-md outline-none filament-tables-pagination-item-disabled cursor-not-allowed pointer-events-none opacity-70"
-                >
-                  <span>...</span>
-                </button>
-              </li>
-
-              <li>
-                <button
-                  type="button"
-                  class="relative flex items-center justify-center font-medium min-w-[2rem] px-1.5 h-8 -my-3 rounded-md outline-none hover:bg-gray-500/5 focus:bg-yellow-500/10 focus:ring-2 focus:ring-yellow-500 dark:hover:bg-gray-400/5 focus:text-yellow-600 transition"
-                >
-                  <span>9</span>
-                </button>
-              </li>
-              <li>
-                <button
-                  type="button"
-                  class="relative flex items-center justify-center font-medium min-w-[2rem] px-1.5 h-8 -my-3 rounded-md outline-none hover:bg-gray-500/5 focus:bg-yellow-500/10 focus:ring-2 focus:ring-yellow-500 dark:hover:bg-gray-400/5 focus:text-yellow-600 transition"
-                >
-                  <span>10</span>
-                </button>
-              </li>
-
-              <li>
-                <button
-                  type="button"
-                  class="relative flex items-center justify-center font-medium min-w-[2rem] px-1.5 h-8 -my-3 rounded-md outline-none hover:bg-gray-500/5 focus:bg-yellow-500/10 focus:ring-2 focus:ring-yellow-500 dark:hover:bg-gray-400/5 transition text-yellow-600"
-                  aria-label="Next"
-                  rel="next"
-                >
-                  <svg
-                    class="w-5 h-5 rtl:scale-x-[-1]"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                    aria-hidden="true"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                      clip-rule="evenodd"
-                    ></path>
-                  </svg>
-                </button>
-              </li>
-            </ol>
-          </div>
-        </div>
+      <div
+        class="not-found-sec bg-gradient-span text-white p-4 mt-6 text-center"
+        style="display: none"
+      >
+        <p class="text-[0.9rem]">
+          <i class="fas fa-shop"></i> Pencarian UMKM tidak ditemukan!
+        </p>
       </div>
     </section>
 
     <footer class="w-full border-t-[#ddd] border-t-[1px]">
       <div class="row-footer flex md:flex-row flex-col gap-8 p-[3rem_8%]">
-        <div class="c-left flex-[1_1_100%] md:flex-[1_1_40%]">
-          <img
-            class="h-[40px]"
-            src="../../images/logo/logo-temuUMKM.png"
-            alt=""
-          />
+        <div class="c-left flex-[1_1_100%] md:flex-[1_1_30%] lg:flex-[1_1_40%]">
+          <img class="h-[40px]" src="../images/logo/logo-temuUMKM.png" alt="" />
           <div class="desc mt-4 mb-6">
             <h4 class="font-medium">
               "Dari <span class="text-violet-700">Amikom</span>, untuk UMKM
               Purwokerto"
             </h4>
             <p class="text-[0.9rem]">
-              Temukan dan dukung UMKM lokal di sekitar Universitas Amikom Purwokerto. Platform 
-            digital yang mengenal lebih dekat usaha kecil dan menengah di sekitar kampus.
+              Temukan dan dukung UMKM lokal di sekitar Universitas Amikom
+              Purwokerto. Platform digital yang mengenal lebih dekat usaha kecil
+              dan menengah di sekitar kampus.
             </p>
           </div>
           <div class="social-media flex gap-4">
@@ -931,34 +724,29 @@
           </div>
         </div>
         <div
-          class="c-right flex-[1_1_100%] md:flex-[1_1_60%] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3"
+          class="c-right flex-[1_1_100%] lg:flex-[1_1_60%] md:flex-[1_1_70%] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3"
         >
           <div class="d-box md:mb-0 mb-8">
             <h4 class="font-medium">Permalinks</h4>
             <div class="w-[20%] mb-3 bg-gradient-span h-[2px]"></div>
             <div class="list flex flex-col gap-1">
               <a
-                href="./"
-                class="text-[0.92rem] transition duration-[300ms] ease-in hover:translate-x-1 active-menu"
+                href="../"
+                class="text-[0.92rem] transition duration-[300ms] ease-in hover:translate-x-1"
                 >Beranda</a
               >
               <a
-                href="./src/tentang.html"
+                href="./tentang.html"
                 class="text-[0.92rem] transition duration-[300ms] ease-in hover:translate-x-1"
                 >Tentang Kami</a
               >
               <a
-                href="./src/umkm-lokal.html"
-                class="text-[0.92rem] transition duration-[300ms] ease-in hover:translate-x-1"
+                href="./umkm-lokal.html"
+                class="text-[0.92rem] transition duration-[300ms] ease-in hover:translate-x-1 active-menu"
                 >Data UMKM Lokal</a
               >
               <a
-                href="./src/testimoni.html"
-                class="text-[0.92rem] transition duration-[300ms] ease-in hover:translate-x-1"
-                >Testimoni</a
-              >
-              <a
-                href="./src/blog.html"
+                href="./blog.html"
                 class="text-[0.92rem] transition duration-[300ms] ease-in hover:translate-x-1"
                 >Blog</a
               >
@@ -991,7 +779,8 @@
             <div class="w-[20%] mb-3 bg-gradient-span h-[2px]"></div>
             <div class="list flex flex-col gap-1">
               <span class="mb-3 text-[0.9rem]"
-                >Dapatkan informasi terbaru seputar UMKM lokal dan cerita inspiratif dari pelaku usaha lokal.</span
+                >Dapatkan informasi terbaru seputar UMKM lokal dan cerita
+                inspiratif dari pelaku usaha lokal.</span
               >
               <div class="input flex gap-1">
                 <input

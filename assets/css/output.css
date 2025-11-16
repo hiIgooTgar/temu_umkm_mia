@@ -745,6 +745,9 @@
   .p-\[7rem_8\%_4rem\] {
     padding: 7rem 8% 4rem;
   }
+  .p-\[7rem_8\%_6rem\] {
+    padding: 7rem 8% 6rem;
+  }
   .px-1\.5 {
     padding-inline: calc(var(--spacing) * 1.5);
   }
@@ -1413,9 +1416,24 @@
       max-width: 55%;
     }
   }
+  .lg\:flex-\[1_1_30\%\] {
+    @media (width >= 64rem) {
+      flex: 1 1 30%;
+    }
+  }
   .lg\:flex-\[1_1_35\%\] {
     @media (width >= 64rem) {
       flex: 1 1 35%;
+    }
+  }
+  .lg\:flex-\[1_1_40\%\] {
+    @media (width >= 64rem) {
+      flex: 1 1 40%;
+    }
+  }
+  .lg\:flex-\[1_1_60\%\] {
+    @media (width >= 64rem) {
+      flex: 1 1 60%;
     }
   }
   .lg\:flex-\[1_1_65\%\] {

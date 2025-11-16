@@ -33,7 +33,6 @@
             <a href="./" class="nav-list active-menu">Beranda</a>
             <a href="./src/tentang.html" class="nav-list">Tentang Kami</a>
             <a href="./src/umkm-lokal.html" class="nav-list">Data UMKM Lokal</a>
-            <a href="./src/testimoni.html" class="nav-list">Testimoni</a>
             <a href="./src/blog.html" class="nav-list">Blog</a>
             <a class="btn-started" href="auth/sign-in.html">Get Started</a>
           </div>
@@ -195,43 +194,55 @@
       </div>
     </section>
 
-    <section class="data-umkm p-[4rem_8%]">
+     <section class="data-umkm p-[4rem_8%]">
       <div class="header-section" data-aos="fade-up">
         <span class="badge-span">Daftar UMKM</span>
-          <h3 class="font-semibold text-xl mt-3 mb-0.5">
-            Jelajahi UMKM Sekitar Kampus Amikom Purwokerto
-          </h3>
+        <h3 class="font-semibold text-xl mt-3 mb-0.5">
+          Jelajahi UMKM Sekitar Kampus Amikom Purwokerto
+        </h3>
         <p class="text-[0.93rem]">
           Temukan beragam usaha lokal yang ada di sekitar kampus
         </p>
       </div>
-      <div class="categories my-4 flex gap-6 items-center flex-col lg:flex-row" data-aos="fade-up">
-       <div class="list-category flex-[1_1_100%] lg:flex-[1_1_65%] flex gap-4 items-center">
-  <span data-filter="all"
-    class="border-[1.5px] cursor-pointer border-violet-700 px-3 py-1.5 text-[0.9rem] rounded-md bg-violet-700 text-white">
-    <i class="fas fa-layer-group"></i>
-    <span class="hidden md:inline"> Semua Kategori</span>
-  </span>
+      <div
+        class="categories my-4 flex gap-6 items-center flex-col lg:flex-row"
+        data-aos="fade-up"
+      >
+        <div
+          class="list-category flex-[1_1_100%] lg:flex-[1_1_65%] flex gap-4 items-center"
+        >
+          <span
+            data-filter="all"
+            class="border-[1.5px] cursor-pointer border-violet-700 px-3 py-1.5 text-[0.9rem] rounded-md bg-violet-700 text-white"
+          >
+            <i class="fas fa-layer-group"></i>
+            <span class="hidden md:inline"> Semua Kategori</span>
+          </span>
 
-  <span data-filter="makanan-minuman"
-    class="border-[1.5px] cursor-pointer border-[#c4c4c4] px-3 py-1.5 text-[0.9rem] rounded-md text-[#777]">
-    <i class="fas fa-utensils"></i>
-    <span class="hidden md:inline"> Makanan & Minuman</span>
-  </span>
+          <span
+            data-filter="makanan-minuman"
+            class="border-[1.5px] cursor-pointer border-[#c4c4c4] px-3 py-1.5 text-[0.9rem] rounded-md text-[#777]"
+          >
+            <i class="fas fa-utensils"></i>
+            <span class="hidden md:inline"> Makanan & Minuman</span>
+          </span>
 
-  <span data-filter="jasa-layanan"
-    class="border-[1.5px] cursor-pointer border-[#c4c4c4] px-3 py-1.5 text-[0.9rem] rounded-md text-[#777]">
-    <i class="fas fa-handshake"></i>
-    <span class="hidden md:inline"> Jasa & Layanan</span>
-  </span>
+          <span
+            data-filter="jasa-layanan"
+            class="border-[1.5px] cursor-pointer border-[#c4c4c4] px-3 py-1.5 text-[0.9rem] rounded-md text-[#777]"
+          >
+            <i class="fas fa-handshake"></i>
+            <span class="hidden md:inline"> Jasa & Layanan</span>
+          </span>
 
-  <span data-filter="produk-kreatif"
-    class="border-[1.5px] cursor-pointer border-[#c4c4c4] px-3 py-1.5 text-[0.9rem] rounded-md text-[#777]">
-    <i class="fas fa-boxes-packing"></i>
-    <span class="hidden md:inline"> Produk Kreatif</span>
-  </span>
-
-</div>
+          <span
+            data-filter="produk-kreatif"
+            class="border-[1.5px] cursor-pointer border-[#c4c4c4] px-3 py-1.5 text-[0.9rem] rounded-md text-[#777]"
+          >
+            <i class="fas fa-boxes-packing"></i>
+            <span class="hidden md:inline"> Produk Kreatif</span>
+          </span>
+        </div>
 
         <div class="searching-product flex-[1_1_100%] lg:flex-[1_1_35%]">
           <div
@@ -239,7 +250,7 @@
           >
             <i class="fas fa-magnifying-glass bg-gradient-span p-[2px]"></i>
             <input
-            id="searchUMKM"
+              id="searchUMKM"
               placeholder="Masukan pencarian UMKM Lokal"
               type="text"
               class="search-input w-full border-none outline-none text-[0.9rem] py-0 px-[0.25rem]"
@@ -247,9 +258,12 @@
           </div>
         </div>
       </div>
-      <div class="row-data-umkm grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-7" data-aos="fade-up" >
+      <div
+        class="row-data-umkm grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-7"
+        data-aos="fade-up"
+      >
         <div
-         data-category="produk-kreatif"
+          data-category="produk-kreatif"
           class="box-product border-[1.5px] border-[#ddd] shadow p-2.5 rounded-md"
         >
           <div class="img-c relative w-full h-[220px]">
@@ -287,23 +301,25 @@
             <p
               class="text-[0.88rem] text-[#333] text-justify py-2 border-t-[1.3px] border-b-[1.3px] border-[#e1e1e1]"
             >
-              Agung Aquarium merupakan salah satu usaha yang bergerak di bidang penjualan 
-              ikan hias dan perlengkapan akuarium di wilayah Purwokerto. Usaha ini awalnya 
-              berdiri di pinggir jalan utama seba...
+              Agung Aquarium merupakan salah satu usaha yang bergerak di bidang
+              penjualan ikan hias dan perlengkapan akuarium di wilayah
+              Purwokerto. Usaha ini awalnya berdiri di pinggir jalan utama
+              seba...
             </p>
             <div
               class="text-justify text-[0.82rem] text-[#555] flex gap-2 mt-2.5"
             >
               <i class="fas fa-location-dot text-[0.8rem] mt-0.5"></i>
               <p class="">
-                Mina Restu, Pasar Ikan Hias, Karangjambu, Purwanegara, Kec. Purwokerto Utara, 
-                Kabupaten Banyumas, Jawa Tengah 53127 (750 Meter dari Universitas Amikom Purwokerto)
+                Mina Restu, Pasar Ikan Hias, Karangjambu, Purwanegara, Kec.
+                Purwokerto Utara, Kabupaten Banyumas, Jawa Tengah 53127 (750
+                Meter dari Universitas Amikom Purwokerto)
               </p>
             </div>
           </div>
         </div>
         <div
-        data-category="makanan-minuman"
+          data-category="makanan-minuman"
           class="box-product border-[1.5px] border-[#ddd] shadow p-2.5 rounded-md"
         >
           <div class="img-c relative w-full h-[220px]">
@@ -341,23 +357,24 @@
             <p
               class="text-[0.88rem] text-[#333] text-justify py-2 border-t-[1.3px] border-b-[1.3px] border-[#e1e1e1]"
             >
-              Angkringan Titik Lapar menjadi tempat nongkrong favorit mahasiswa yang 
-              mencari suasana santai dan harga bersahabat. Menu yang ditawarkan beragam, 
-              mulai dari sate-satean, nasi kucing, goreng...
+              Angkringan Titik Lapar menjadi tempat nongkrong favorit mahasiswa
+              yang mencari suasana santai dan harga bersahabat. Menu yang
+              ditawarkan beragam, mulai dari sate-satean, nasi kucing, goreng...
             </p>
             <div
               class="text-justify text-[0.82rem] text-[#555] flex gap-2 mt-2.5"
             >
               <i class="fas fa-location-dot text-[0.8rem] mt-0.5"></i>
               <p class="">
-                Jl. Letjend Pol. Soemarto, Watumas, Purwanegara, Kec. Purwokerto Tim., 
-                Kabupaten Banyumas, Jawa Tengah 53127 (40 m dari Universitas Amikom Purwokerto)
+                Jl. Letjend Pol. Soemarto, Watumas, Purwanegara, Kec. Purwokerto
+                Tim., Kabupaten Banyumas, Jawa Tengah 53127 (40 m dari
+                Universitas Amikom Purwokerto)
               </p>
             </div>
           </div>
         </div>
         <div
-        data-category="makanan-minuman"
+          data-category="makanan-minuman"
           class="box-product border-[1.5px] border-[#ddd] shadow p-2.5 rounded-md"
         >
           <div class="img-c relative w-full h-[220px]">
@@ -395,23 +412,24 @@
             <p
               class="text-[0.88rem] text-[#333] text-justify py-2 border-t-[1.3px] border-b-[1.3px] border-[#e1e1e1]"
             >
-              Batagor Niki Sari merupakan usaha kuliner lokal dengan cita rasa batagor 
-              dan siomay khas Bandung yang disajikan dengan bahan segar dan racikan bumbu 
-              khas rumahan. Dengan cita rasa yang te...
+              Batagor Niki Sari merupakan usaha kuliner lokal dengan cita rasa
+              batagor dan siomay khas Bandung yang disajikan dengan bahan segar
+              dan racikan bumbu khas rumahan. Dengan cita rasa yang te...
             </p>
             <div
               class="text-justify text-[0.82rem] text-[#555] flex gap-2 mt-2.5"
             >
               <i class="fas fa-location-dot text-[0.8rem] mt-0.5"></i>
               <p class="">
-                Jl. Letjend Pol. Soemarto No.544-526, Karangjambu, Purwanegara, Kec. Purwokerto Utara,
-                 Kabupaten Banyumas, Jawa Tengah 53127 (650 Meter dari Universitas Amikom Purwokerto)
+                Jl. Letjend Pol. Soemarto No.544-526, Karangjambu, Purwanegara,
+                Kec. Purwokerto Utara, Kabupaten Banyumas, Jawa Tengah 53127
+                (650 Meter dari Universitas Amikom Purwokerto)
               </p>
             </div>
           </div>
         </div>
         <div
-        data-category="makanan-minuman"
+          data-category="makanan-minuman"
           class="box-product border-[1.5px] border-[#ddd] shadow p-2.5 rounded-md"
         >
           <div class="img-c relative w-full h-[220px]">
@@ -449,23 +467,24 @@
             <p
               class="text-[0.88rem] text-[#333] text-justify py-2 border-t-[1.3px] border-b-[1.3px] border-[#e1e1e1]"
             >
-              Chicken’Q merupakan usaha kuliner yang berfokus pada hidangan ayam goreng 
-              dengan berbagai varian menu yang menggugah selera. Usaha ini dikenal karena 
-              menyajikan pilihan menu lengkap sepe...
+              Chicken’Q merupakan usaha kuliner yang berfokus pada hidangan ayam
+              goreng dengan berbagai varian menu yang menggugah selera. Usaha
+              ini dikenal karena menyajikan pilihan menu lengkap sepe...
             </p>
             <div
               class="text-justify text-[0.82rem] text-[#555] flex gap-2 mt-2.5"
             >
               <i class="fas fa-location-dot text-[0.8rem] mt-0.5"></i>
               <p class="">
-                Jl. Letjend Pol. Soemarto No.334, Karangjambu, Purwanegara, Kec. Purwokerto Utara, 
-                Kabupaten Banyumas, Jawa Tengah 53127 (800 m dari Universitas Amikom Purwokerto)
+                Jl. Letjend Pol. Soemarto No.334, Karangjambu, Purwanegara, Kec.
+                Purwokerto Utara, Kabupaten Banyumas, Jawa Tengah 53127 (800 m
+                dari Universitas Amikom Purwokerto)
               </p>
             </div>
           </div>
         </div>
         <div
-        data-category="makanan-minuman"
+          data-category="makanan-minuman"
           class="box-product border-[1.5px] border-[#ddd] shadow p-2.5 rounded-md"
         >
           <div class="img-c relative w-full h-[220px]">
@@ -503,8 +522,8 @@
             <p
               class="text-[0.88rem] text-[#333] text-justify py-2 border-t-[1.3px] border-b-[1.3px] border-[#e1e1e1]"
             >
-              Bubur Mang Iwan merupakan kuliner legendaris yang menyajikan 
-              bubur ayam dengan cita rasa khas dan konsisten. Dengan mempertahankan 
+              Bubur Mang Iwan merupakan kuliner legendaris yang menyajikan bubur
+              ayam dengan cita rasa khas dan konsisten. Dengan mempertahankan
               cita rasa asli dari racikan bubur yang lembut ...
             </p>
             <div
@@ -512,14 +531,16 @@
             >
               <i class="fas fa-location-dot text-[0.8rem] mt-0.5"></i>
               <p class="">
-                Jl. Letjend Pol. Soemarto Depan Mako Brimob No.589A, Karangjambu, Purwanegara, Kec. Purwokerto Utara,
-                 Kabupaten Banyumas, Jawa Tengah 53127 (450 Meter dari Universitas Amikom Purwokerto)
+                Jl. Letjend Pol. Soemarto Depan Mako Brimob No.589A,
+                Karangjambu, Purwanegara, Kec. Purwokerto Utara, Kabupaten
+                Banyumas, Jawa Tengah 53127 (450 Meter dari Universitas Amikom
+                Purwokerto)
               </p>
             </div>
           </div>
         </div>
         <div
-        data-category="makanan-minuman"
+          data-category="makanan-minuman"
           class="box-product border-[1.5px] border-[#ddd] shadow p-2.5 rounded-md"
         >
           <div class="img-c relative w-full h-[220px]">
@@ -557,23 +578,24 @@
             <p
               class="text-[0.88rem] text-[#333] text-justify py-2 border-t-[1.3px] border-b-[1.3px] border-[#e1e1e1]"
             >
-              Es Mbludag merupakan usaha minuman segar yang dijalankan oleh pasangan suami istri 
-              di kawasan Purwokerto. Usaha ini berawal dari halaman rumah yang kemudian disulap 
-              menjadi kedai sederhana ...
+              Es Mbludag merupakan usaha minuman segar yang dijalankan oleh
+              pasangan suami istri di kawasan Purwokerto. Usaha ini berawal dari
+              halaman rumah yang kemudian disulap menjadi kedai sederhana ...
             </p>
             <div
               class="text-justify text-[0.82rem] text-[#555] flex gap-2 mt-2.5"
             >
               <i class="fas fa-location-dot text-[0.8rem] mt-0.5"></i>
               <p class="">
-                Jl. Letjend Pol. Soemarto No.584, Karangjambu, Purwanegara, Kec. Purwokerto Utara, 
-                Kabupaten Banyumas, Jawa Tengah 53127 (500 m dari Universitas Amikom Purwokerto)
+                Jl. Letjend Pol. Soemarto No.584, Karangjambu, Purwanegara, Kec.
+                Purwokerto Utara, Kabupaten Banyumas, Jawa Tengah 53127 (500 m
+                dari Universitas Amikom Purwokerto)
               </p>
             </div>
           </div>
         </div>
         <div
-        data-category="makanan-minuman"
+          data-category="makanan-minuman"
           class="box-product border-[1.5px] border-[#ddd] shadow p-2.5 rounded-md"
         >
           <div class="img-c relative w-full h-[220px]">
@@ -611,22 +633,24 @@
             <p
               class="text-[0.88rem] text-[#333] text-justify py-2 border-t-[1.3px] border-b-[1.3px] border-[#e1e1e1]"
             >
-              Mie Ayam & Bakso Seleraku merupakan usaha kuliner yang telah beroperasi sejak 
-              tahun 2015, menghadirkan cita rasa mie ayam rumahan yang sederhana namun menggugah 
-              selera. kedai ini dike...
+              Mie Ayam & Bakso Seleraku merupakan usaha kuliner yang telah
+              beroperasi sejak tahun 2015, menghadirkan cita rasa mie ayam
+              rumahan yang sederhana namun menggugah selera. kedai ini dike...
             </p>
             <div
               class="text-justify text-[0.82rem] text-[#555] flex gap-2 mt-2.5"
             >
               <i class="fas fa-location-dot text-[0.8rem] mt-0.5"></i>
               <p class="">
-                Jl. Letjend Pol. Soemarto, Karangjambu, Purwanegara, Kec. Purwokerto Utara, Kabupaten Banyumas, Jawa Tengah 53127 (650 Meter dari Universitas Amikom Purwokerto)
+                Jl. Letjend Pol. Soemarto, Karangjambu, Purwanegara, Kec.
+                Purwokerto Utara, Kabupaten Banyumas, Jawa Tengah 53127 (650
+                Meter dari Universitas Amikom Purwokerto)
               </p>
             </div>
           </div>
         </div>
         <div
-        data-category="produk-kreatif"
+          data-category="produk-kreatif"
           class="box-product border-[1.5px] border-[#ddd] shadow p-2.5 rounded-md"
         >
           <div class="img-c relative w-full h-[220px]">
@@ -664,23 +688,24 @@
             <p
               class="text-[0.88rem] text-[#333] text-justify py-2 border-t-[1.3px] border-b-[1.3px] border-[#e1e1e1]"
             >
-              Toko RAS 99 menjual berbagai perlengkapan rumah tangga seperti perabot plastik, 
-              ember, dan kanvas. Harga produk di toko ini cukup terjangkau, dari kisaran Rp.2000 
-              sampai ratusan maupun jutaan ...
+              Toko RAS 99 menjual berbagai perlengkapan rumah tangga seperti
+              perabot plastik, ember, dan kanvas. Harga produk di toko ini cukup
+              terjangkau, dari kisaran Rp.2000 sampai ratusan maupun jutaan ...
             </p>
             <div
               class="text-justify text-[0.82rem] text-[#555] flex gap-2 mt-2.5"
             >
               <i class="fas fa-location-dot text-[0.8rem] mt-0.5"></i>
               <p class="">
-                Jl. Candrawijaya, RT.3/RW.2, Dusun II, Purwosari, Kec. Baturaden, Kabupaten Banyumas, 
-                Jawa Tengah (700 m dari Universitas Amikom Purwokerto)
+                Jl. Candrawijaya, RT.3/RW.2, Dusun II, Purwosari, Kec.
+                Baturaden, Kabupaten Banyumas, Jawa Tengah (700 m dari
+                Universitas Amikom Purwokerto)
               </p>
             </div>
           </div>
         </div>
         <div
-        data-category="produk-kreatif"
+          data-category="produk-kreatif"
           class="box-product border-[1.5px] border-[#ddd] shadow p-2.5 rounded-md"
         >
           <div class="img-c relative w-full h-[220px]">
@@ -712,29 +737,29 @@
                 4.5 <i class="fas fa-star text-yellow-400"></i
               ></span>
             </div>
-            <h3 class="name-umkm-j font-medium text-[1.1rem] mb-2">
-              Toko RR
-            </h3>
+            <h3 class="name-umkm-j font-medium text-[1.1rem] mb-2">Toko RR</h3>
             <p
               class="text-[0.88rem] text-[#333] text-justify py-2 border-t-[1.3px] border-b-[1.3px] border-[#e1e1e1]"
             >
-              Toko RR merupakan usaha lokal yang menyediakan berbagai perlengkapan dan aksesoris 
-              seperti mantel, topeng, sarung tangan, dan kaos kaki. Berlokasi di sekitar 
-              kawasan Purwokerto, toko ini ...
+              Toko RR merupakan usaha lokal yang menyediakan berbagai
+              perlengkapan dan aksesoris seperti mantel, topeng, sarung tangan,
+              dan kaos kaki. Berlokasi di sekitar kawasan Purwokerto, toko ini
+              ...
             </p>
             <div
               class="text-justify text-[0.82rem] text-[#555] flex gap-2 mt-2.5"
             >
               <i class="fas fa-location-dot text-[0.8rem] mt-0.5"></i>
               <p class="">
-                Jl. Letjend Pol. Soemarto No.44, Karanganjing, Purwanegara, Kec. Purwokerto Utara,
-                 Kabupaten Banyumas, Jawa Tengah 53127 (800 m dari Universitas Amikom Purwokerto)
+                Jl. Letjend Pol. Soemarto No.44, Karanganjing, Purwanegara, Kec.
+                Purwokerto Utara, Kabupaten Banyumas, Jawa Tengah 53127 (800 m
+                dari Universitas Amikom Purwokerto)
               </p>
             </div>
           </div>
         </div>
         <div
-        data-category="jasa-layanan"
+          data-category="jasa-layanan"
           class="box-product border-[1.5px] border-[#ddd] shadow p-2.5 rounded-md"
         >
           <div class="img-c relative w-full h-[220px]">
@@ -772,9 +797,10 @@
             <p
               class="text-[0.88rem] text-[#333] text-justify py-2 border-t-[1.3px] border-b-[1.3px] border-[#e1e1e1]"
             >
-              Top Laundry merupakan layanan profesional dan menjadi pilihan bagi mahasiswa, pekerja, 
-              dan keluarga yang membutuhkan layanan cuci pakaian yang bersih, rapi, dan beraroma segar. 
-              Dengan fokus pada ...
+              Top Laundry merupakan layanan profesional dan menjadi pilihan bagi
+              mahasiswa, pekerja, dan keluarga yang membutuhkan layanan cuci
+              pakaian yang bersih, rapi, dan beraroma segar. Dengan fokus pada
+              ...
             </p>
             <div
               class="text-justify text-[0.82rem] text-[#555] flex gap-2 mt-2.5"
@@ -782,19 +808,25 @@
               <i class="fas fa-location-dot text-[0.8rem] mt-0.5"></i>
               <p class="">
                 Jl. Letjend Pol. Soemarto, Karangjambu, Purwanegara, Kec.
-                Purwokerto Utara, Kabupaten Banyumas, Jawa Tengah 53127 (450 m dari Universitas Amikom Purwokerto)
+                Purwokerto Utara, Kabupaten Banyumas, Jawa Tengah 53127 (450 m
+                dari Universitas Amikom Purwokerto)
               </p>
             </div>
           </div>
         </div>
       </div>
-      <div class="not-found-sec bg-gradient-span text-white p-4 mt-6 text-center" style="display: none">
-        <p class="text-[0.9rem]"><i class="fas fa-shop"></i> Pencarian UMKM tidak ditemukan!</p>
+      <div
+        class="not-found-sec bg-gradient-span text-white p-4 mt-6 text-center"
+        style="display: none"
+      >
+        <p class="text-[0.9rem]">
+          <i class="fas fa-shop"></i> Pencarian UMKM tidak ditemukan!
+        </p>
       </div>
       <div class="btn-product-d flex justify-center w-full mt-8">
         <a
           class="bg-gradient-span text-white text-[0.9rem] inline-block py-2 px-3 rounded-sm"
-          href=""
+          href="./src/umkm-lokal.html"
         >
           <i class="fas fa-shop"></i> Lihat Daftar UMKM</a
         >
@@ -811,8 +843,8 @@
           Informasi dan cerita menarik seputar pelaku usaha lokal di sekitar Purwokerto Dari inovasi produk hingga kisah inspiratif dari para pemilik UMKM.
         </p>
       </div>
-      <div class="row-news-umkm flex gap-6 mt-7 md:flex-row flex-col" data-aos="fade-up">
-        <div class="left-content flex-[1_1_100%] md:flex-[1_1_40%]">
+      <div class="row-news-umkm flex gap-6 mt-7 lg:flex-row flex-col" data-aos="fade-up">
+        <div class="left-content flex-[1_1_100%] lg:flex-[1_1_40%]">
           <div
             class="box-news-l rounded-md border-[#e4e4e4] shadow border-[1.5px]"
           >
@@ -857,7 +889,7 @@
             </div>
           </div>
         </div>
-        <div class="right-content flex-[1_1_100%] md:flex-[1_1_60%] flex flex-col gap-6">
+        <div class="right-content flex-[1_1_100%] lg:flex-[1_1_60%] flex flex-col gap-6">
           <div
             class="box-news-r flex  md:flex-row flex-col gap-[0.6rem] rounded-md border-[#e4e4e4] shadow border-[1.5px]"
           >
@@ -949,7 +981,7 @@
       <div class="btn-product-d flex justify-center w-full mt-8 gap-2">
         <a
           class="bg-gradient-span text-white text-[0.9rem] inline-block py-2 px-3 rounded-sm"
-          href=""
+          href="./src/blog.html"
         >
           Lihat Berita TemuUMKM</a
         >
@@ -1072,7 +1104,7 @@
 
     <footer class="w-full border-t-[#ddd] border-t-[1px]">
       <div class="row-footer flex md:flex-row flex-col gap-8 p-[3rem_8%]">
-        <div class="c-left flex-[1_1_100%] md:flex-[1_1_40%]">
+        <div class="c-left flex-[1_1_100%] md:flex-[1_1_30%] lg:flex-[1_1_40%]">
           <img class="h-[40px]" src="./images/logo/logo-temuUMKM.png"  alt="">
           <div class="desc mt-4 mb-6">
             <h4 class="font-medium">"Dari <span class="text-violet-700">Amikom</span>, untuk UMKM Purwokerto"</h4>
@@ -1093,7 +1125,7 @@
             </a>
           </div>
         </div>
-        <div class="c-right flex-[1_1_100%] md:flex-[1_1_60%] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+        <div class="c-right flex-[1_1_100%] lg:flex-[1_1_60%] md:flex-[1_1_70%] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
           <div class="d-box md:mb-0 mb-8">
             <h4 class="font-medium">Permalinks</h4>
             <div class="w-[20%] mb-3 bg-gradient-span h-[2px]"></div>
@@ -1101,7 +1133,6 @@
               <a href="./" class="text-[0.92rem] transition duration-[300ms] ease-in hover:translate-x-1 active-menu">Beranda</a>
               <a href="./src/tentang.html" class="text-[0.92rem] transition duration-[300ms] ease-in hover:translate-x-1">Tentang Kami</a>
               <a href="./src/umkm-lokal.html" class="text-[0.92rem] transition duration-[300ms] ease-in hover:translate-x-1">Data UMKM Lokal</a>
-              <a href="./src/testimoni.html" class="text-[0.92rem] transition duration-[300ms] ease-in hover:translate-x-1">Testimoni</a>
               <a href="./src/blog.html" class="text-[0.92rem] transition duration-[300ms] ease-in hover:translate-x-1">Blog</a>
             </div>
           </div>

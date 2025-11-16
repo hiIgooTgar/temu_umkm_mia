@@ -40,12 +40,11 @@
               />
             </div>
             <a href="../../" class="nav-list">Beranda</a>
-            <a href="./tentang.html" class="nav-list">Tentang Kami</a>
-            <a href="./umkm-lokal.html" class="nav-list active-menu"
+            <a href="../tentang.html" class="nav-list">Tentang Kami</a>
+            <a href="../umkm-lokal.html" class="nav-list"
               >Data UMKM Lokal</a
             >
-            <a href="./testimoni.html" class="nav-list">Testimoni</a>
-            <a href="./blog.html" class="nav-list">Blog</a>
+            <a href="../blog.html" class="nav-list active-menu">Blog</a>
             <a class="btn-started" href="../../auth/sign-in.html"
               >Get Started</a
             >
@@ -202,23 +201,19 @@
     </div>
     </section>
 
-    <footer class="w-full border-t-[#ddd] border-t-[1px]">
+ <footer class="w-full border-t-[#ddd] border-t-[1px]">
       <div class="row-footer flex md:flex-row flex-col gap-8 p-[3rem_8%]">
-        <div class="c-left flex-[1_1_100%] md:flex-[1_1_40%]">
-          <img
-            class="h-[40px]"
-            src="../../../../images/logo/logo-temuUMKM.png"
-            alt=""
-          />
+        <div class="c-left flex-[1_1_100%] md:flex-[1_1_30%] lg:flex-[1_1_40%]">
+          <img class="h-[40px]" src="../../images/logo/logo-temuUMKM.png" alt="" />
           <div class="desc mt-4 mb-6">
             <h4 class="font-medium">
               "Dari <span class="text-violet-700">Amikom</span>, untuk UMKM
               Purwokerto"
             </h4>
             <p class="text-[0.9rem]">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
-              a cupiditate maiores vero pariatur distinctio ipsam illo saepe
-              corrupti repudiandae?
+              Temukan dan dukung UMKM lokal di sekitar Universitas Amikom
+              Purwokerto. Platform digital yang mengenal lebih dekat usaha kecil
+              dan menengah di sekitar kampus.
             </p>
           </div>
           <div class="social-media flex gap-4">
@@ -249,35 +244,30 @@
           </div>
         </div>
         <div
-          class="c-right flex-[1_1_100%] md:flex-[1_1_60%] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3"
+          class="c-right flex-[1_1_100%] lg:flex-[1_1_60%] md:flex-[1_1_70%] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3"
         >
           <div class="d-box md:mb-0 mb-8">
             <h4 class="font-medium">Permalinks</h4>
             <div class="w-[20%] mb-3 bg-gradient-span h-[2px]"></div>
             <div class="list flex flex-col gap-1">
               <a
-                href="./"
-                class="text-[0.92rem] transition duration-[300ms] ease-in hover:translate-x-1 active-menu"
+                href="../../"
+                class="text-[0.92rem] transition duration-[300ms] ease-in hover:translate-x-"
                 >Beranda</a
               >
               <a
-                href="./src/tentang.html"
+                href="../tentang.html"
                 class="text-[0.92rem] transition duration-[300ms] ease-in hover:translate-x-1"
                 >Tentang Kami</a
               >
               <a
-                href="./src/umkm-lokal.html"
+                href="../umkm-lokal.html"
                 class="text-[0.92rem] transition duration-[300ms] ease-in hover:translate-x-1"
                 >Data UMKM Lokal</a
               >
               <a
-                href="./src/testimoni.html"
-                class="text-[0.92rem] transition duration-[300ms] ease-in hover:translate-x-1"
-                >Testimoni</a
-              >
-              <a
-                href="./src/blog.html"
-                class="text-[0.92rem] transition duration-[300ms] ease-in hover:translate-x-1"
+                href="../blog.html"
+                class="text-[0.92rem] transition duration-[300ms] ease-in hover:translate-x-1 active-menu"
                 >Blog</a
               >
             </div>
@@ -305,12 +295,12 @@
             </div>
           </div>
           <div class="d-box md:mb-0 mb-8">
-            <h4 class="font-medium">Newsletter</h4>
+            <h4 class="font-medium">Tetap Terhubung dengan Kami!</h4>
             <div class="w-[20%] mb-3 bg-gradient-span h-[2px]"></div>
             <div class="list flex flex-col gap-1">
               <span class="mb-3 text-[0.9rem]"
-                >Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Quibusdam, voluptate.</span
+                >Dapatkan informasi terbaru seputar UMKM lokal dan cerita
+                inspiratif dari pelaku usaha lokal.</span
               >
               <div class="input flex gap-1">
                 <input
@@ -339,10 +329,39 @@
       </div>
     </footer>
 
+
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
     <script src="../../assets/js/script.js"></script>
+    <script>
+      // recommendBlog swiper js
+var swiper = new Swiper(".recommendBlog", {
+  spaceBetween: 20,
+  grabCursor: true,
+  loop: true,
+  slidesPerView: 3,
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    480: {
+      slidesPerView: 1,
+    },
+    767: {
+      slidesPerView: 2,
+    },
+    992: {
+      slidesPerView: 3,
+    },
+  },
+});
+
+    </script>
   </body>
 </html>
