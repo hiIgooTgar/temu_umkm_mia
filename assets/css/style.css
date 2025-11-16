@@ -456,6 +456,27 @@ body:not(.page-index) .nav-list {
   border-top: 1.5px solid var(--primary_orange);
 }
 
+.blog-row .box-blog:hover {
+  border: 1.5px solid var(--primary_orange);
+  background: #fefefe;
+  transform: translateY(-5px);
+}
+
+.blog-row .box-blog:hover img {
+  transform: scale(1.1);
+  transition: 300ms ease-out;
+}
+
+.blog-row .box-blog:hover a {
+  background: linear-gradient(
+    to bottom right,
+    var(--primary_yellow),
+    var(--secondary_orange)
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 /* footer section */
 footer .social-media a:hover {
   color: var(--primary_orange);

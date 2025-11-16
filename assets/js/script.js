@@ -204,3 +204,29 @@ var swiper = new Swiper(".recommendUMKM", {
     },
   },
 });
+
+// recommendBlog swiper js
+var swiper = new Swiper(".recommendBlog", {
+  spaceBetween: 20,
+  grabCursor: true,
+  loop: true,
+  slidesPerView: 3,
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    480: {
+      slidesPerView: 1,
+    },
+    767: {
+      slidesPerView: 2,
+    },
+    992: {
+      slidesPerView: 3,
+    },
+  },
+});
