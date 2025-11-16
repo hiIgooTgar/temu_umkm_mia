@@ -39,7 +39,7 @@ Nama Tim: **Baru Terbit**
 
 Anggota:
 
-🧑‍💻 Rizky — UI/UX & Front-End Developer
+🧑‍💻 Rizky — UI/UX Designer
 
 💻 Igo Tegar Prambudhy — Front-End Developer
 
